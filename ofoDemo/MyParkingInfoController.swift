@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTIndicator
 
 class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
@@ -23,6 +24,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        FTIndicator.showProgressWithmessage("Please waiting ...")
         self.title = "我的车位"
                self.myParkPlace = self.baseInfo.cacheGetDic(key: "info")
         self.baseInfo2.cacheSetDic(key: "info2", value: self.myParkPlace)
@@ -67,6 +69,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! MyTableCell
         DispatchQueue.main.asyncAfter(deadline: .now()+2, execute:
             {
+                FTIndicator.dismissProgress()
         cell.textLabel?.text = self.myParkPlace[indexPath.row]["address"] as? String
         
 
