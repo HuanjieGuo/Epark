@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D964680AE806531D7FCB51B3F614B30431C5BA8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D0BFAB7B7DE242EE9569D52AFA3F4DEA578E7D0" : 9223372036854775807,
+    "6D964680AE806531D7FCB51B3F614B30431C5BA8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B05BCD18-5A05-4122-BEB0-5C524FCA49A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D0BFAB7B7DE242EE9569D52AFA3F4DEA578E7D0" : "",
+    "6D964680AE806531D7FCB51B3F614B30431C5BA8" : "ofoDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ofoDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ofoDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hjackguo\/ofoDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D964680AE806531D7FCB51B3F614B30431C5BA8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hjackguo\/IOS_muke.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D0BFAB7B7DE242EE9569D52AFA3F4DEA578E7D0"
+    }
+  ]
+}
