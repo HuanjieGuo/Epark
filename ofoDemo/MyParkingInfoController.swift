@@ -70,7 +70,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         DispatchQueue.main.asyncAfter(deadline: .now()+2, execute:
             {
                 FTIndicator.dismissProgress()
-        cell.textLabel?.text = self.myParkPlace[indexPath.row]["address"] as? String
+        cell.textLabel?.text = self.myParkPlace[indexPath.row]["name"] as? String
         
 
         if self.myParkPlace[indexPath.row]["status"]! as! Int == 1{

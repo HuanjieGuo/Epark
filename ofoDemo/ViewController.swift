@@ -57,7 +57,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
 //        let params = ["latitude":mapView.userLocation.coordinate.latitude,"longitude":mapView.userLocation.coordinate.longitude]
         do{
 //            let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region",parameters: params)
-                  let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region/2")
+                  let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region/5")
             opt.start{response in
             
                 if let err = response.error{
@@ -453,7 +453,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
           
            destVC.token = token
             destVC.number = String(parkInformation[tag]["id"] as! Int)
-            destVC.location = parkInformation[tag]["address"] as! String
+            destVC.location = parkInformation[tag]["name"] as! String
             destVC.money = String(parkInformation[tag]["price"] as! Int)
 
             
