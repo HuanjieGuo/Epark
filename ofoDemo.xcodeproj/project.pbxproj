@@ -593,7 +593,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ofoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ofoDemo.com;
+				PRODUCT_BUNDLE_IDENTIFIER = ofoDemoyue.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ofoDemo/ofoDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -612,7 +612,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ofoDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ofoDemo.com;
+				PRODUCT_BUNDLE_IDENTIFIER = ofoDemoyue.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ofoDemo/ofoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

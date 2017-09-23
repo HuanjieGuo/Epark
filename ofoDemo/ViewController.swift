@@ -424,7 +424,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         var timeDesc = "1分钟以内"
         
         if walkMinute > 0 {
-            timeDesc = walkManager.naviRoute!.routeLength.description + "分钟"
+            timeDesc = String(Int(walkManager.naviRoute!.routeLength.description)!/120) + "分钟"
         }
         
         let hintTitle = "驾车" + timeDesc
