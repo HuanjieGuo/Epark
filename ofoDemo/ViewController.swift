@@ -131,7 +131,9 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     
     override func viewWillAppear(_ animated: Bool) {
        
-      
+        // Clear the last values.
+        parkInformation.removeAll()
+        
         //我的出租车位网络请求
         do{
             let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/user/place", headers: ["authorization":self.token])
@@ -478,7 +480,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
            destVC.token = token
             destVC.number = String(parkInformation[tag]["id"] as! Int)
             destVC.location = parkInformation[tag]["name"] as! String
-            destVC.money = String(parkInformation[tag]["price"] as! Int)
+            destVC.money = String(parkInformation[tag]["price"] as! Double)
 
             
            
