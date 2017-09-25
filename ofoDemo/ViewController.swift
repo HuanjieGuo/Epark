@@ -25,26 +25,33 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     var testLatitude:Double = Double()
     var token = ""
     var base: baseClass = baseClass()
-   
+     var manyAnnotation : [MAPointAnnotation] = []
     var sign:String = String()
     var baseInfo: baseClass = baseClass()
     var baseInfo2: baseClass = baseClass()
-    var removeAnnotation : [MAPointAnnotation] = []
+   
 
     @IBOutlet weak var panelView: UIView!
     @IBAction func locationTap(_ sender: Any) {
 
 
-        self.pin.isLockedToScreen = true
+
+      
+//        self.pin.isLockedToScreen = true
+//        self.pin.lockedScreenPoint = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
+        
         self.pin.lockedScreenPoint = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
+//        self.pin.isLockedToScreen = true
         self.pin.coordinate.latitude = self.mapView.userLocation.coordinate.latitude
         self.pin.coordinate.longitude = self.mapView.userLocation.coordinate.longitude
+        
+        
 
         self.mapView.addAnnotation(self.pin)
         
+       
         //        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute:
         //            {
-        
         self.mapView.showAnnotations([self.pin], animated: true)
         
         
@@ -56,18 +63,25 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     func getNearbyInformation() {
 //        let params = ["latitude":mapView.userLocation.coordinate.latitude,"longitude":mapView.userLocation.coordinate.longitude]
         do{
+            
 //            let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region",parameters: params)
-                  let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region/5")
+                  let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/region/2")
             opt.start{response in
             
                 if let err = response.error{
                     print("error:\(err.localizedDescription)")
                     return
                 }
+                
                 print("获得的附近车位数据:\(response.description)")
                 //赋值
                 let json = JSON(response.data)
                 
+                self.manyAnnotation.removeAll()
+                    self.mapView.removeAnnotations(self.mapView.annotations)
+                print(self.parkInformation)
+                print(self.mapView.overlays)
+                print(self.mapView.annotations)
                 for i in 0...json["result"].count-1 {
                     if json["result"][i]["status"] == 1{
                     self.parkInformation.append(json["result"][i].dictionaryObject!)
@@ -77,8 +91,10 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                 
                 
                 //测试
-
-                 var manyAnnotation : [MAPointAnnotation] = []
+   
+                
+                
+               
                 for i in 0...self.parkInformation.count-1
                     
                 {
@@ -89,13 +105,16 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                     pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: self.parkInformation[i]["latitude"] as! CLLocationDegrees, longitude: self.parkInformation[i]["longitude"] as! CLLocationDegrees)
                     pointAnnotation.title = self.parkInformation[i]["name"] as! String
                     pointAnnotation.subtitle = self.parkInformation[i]["address"] as! String
-                    manyAnnotation.append(pointAnnotation)
-                   
+                    self.manyAnnotation.append(pointAnnotation)
+
                 }
                 
-                self.mapView.addAnnotations(manyAnnotation)
-             self.mapView.showAnnotations(manyAnnotation, animated: true)
-                self.removeAnnotation = manyAnnotation
+                print(self.manyAnnotation)
+            
+                
+                self.mapView.addAnnotations(self.manyAnnotation)
+             self.mapView.showAnnotations(self.manyAnnotation, animated: true)
+  
     
             }
             
@@ -111,8 +130,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
 
     
     override func viewWillAppear(_ animated: Bool) {
-        
        
+      
         //我的出租车位网络请求
         do{
             let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/user/place", headers: ["authorization":self.token])
@@ -139,8 +158,13 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
         
         // map
+        if mapView == nil{
         mapView = MAMapView(frame: view.bounds)
         view.addSubview(mapView)
+        }
+        mapView.removeAnnotations(manyAnnotation)
+        mapView.removeOverlays(mapView.overlays)
+       
         view.bringSubview(toFront: panelView)
         mapView.delegate = self
         //        mapView.zoomLevel = 17 改
@@ -464,8 +488,10 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         }
         if segue.identifier == "myParkPlace"{
             
-      self.mapView.removeAnnotations(removeAnnotation)
-            print("remove!!!!\n\n\(removeAnnotation)")
+
+            
+
+           
 //            //我的出租车位网络请求
 //            do{
 //                let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/user/place", headers: ["authorization":self.token])
