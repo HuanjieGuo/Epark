@@ -15,8 +15,10 @@ class webViewController: UIViewController  {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         webView = WKWebView(frame: self.view.frame)
         view.addSubview(webView)
+        
         self.title = "汽车资讯"
         let url =  URL(string:"http://www.autohome.com.cn/shanghai/")!
         let request = URLRequest(url: url)

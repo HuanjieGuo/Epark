@@ -11,6 +11,7 @@ import SWRevealViewController
 
 class revealViewController: SWRevealViewController {
 
+    
     var userID = ""
     var token = ""
     var userPhoto = ""
@@ -30,19 +31,19 @@ class revealViewController: SWRevealViewController {
     }
     
     
-    
+
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sw_rear"{
             
-            let destVC = segue.destination as! MenuController
-            destVC.userID = userID
-            destVC.token = token
-            destVC.userPhoto = userPhoto
-            destVC.userNickname = userNickname
-            
+//            let destVC = segue.destination as! MenuController
+//            destVC.userID = userID
+//            destVC.token = token
+//            destVC.userPhoto = userPhoto
+//            destVC.userNickname = userNickname
+//            
         }
 
         

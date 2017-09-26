@@ -21,7 +21,6 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     var walkManager : AMapNaviWalkManager!
     var parkInformation = [[String:Any]]()
     var tag = Int()
-  
     var testLatitude:Double = Double()
     var token = ""
     var base: baseClass = baseClass()
@@ -79,9 +78,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                 
                 self.manyAnnotation.removeAll()
                     self.mapView.removeAnnotations(self.mapView.annotations)
-                print(self.parkInformation)
-                print(self.mapView.overlays)
-                print(self.mapView.annotations)
+
                 for i in 0...json["result"].count-1 {
                     if json["result"][i]["status"] == 1{
                     self.parkInformation.append(json["result"][i].dictionaryObject!)
@@ -170,10 +167,17 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         view.bringSubview(toFront: panelView)
         mapView.delegate = self
         //        mapView.zoomLevel = 17 改
-        mapView.zoomLevel = 19
+        mapView.zoomLevel = 13
+        
+        //定位信息
         mapView.showsUserLocation = true
-//        mapView.userTrackingMode = .follow
         mapView.userTrackingMode = .follow
+        
+        let r = MAUserLocationRepresentation()
+        r.showsHeadingIndicator = true
+        mapView.update(r)
+
+        
         getNearbyInformation()
         DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute:
                     {
@@ -203,16 +207,6 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
         //        })
         })
-        
-        
-      
-        
-        
-        
-        
-
-        
-        
     
       
     }
@@ -223,20 +217,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         token = self.sign
         //
        
+
         
-//        // map
-//        mapView = MAMapView(frame: view.bounds)
-//        view.addSubview(mapView)
-//        view.bringSubview(toFront: panelView)
-//        mapView.delegate = self
-//        //        mapView.zoomLevel = 17 改
-//        mapView.zoomLevel = 19
-//        mapView.showsUserLocation = true
-//        mapView.userTrackingMode = .follow
-        
-        //search
-        search = AMapSearchAPI()
-        search.delegate = self
         
         //walkManager
         walkManager = AMapNaviWalkManager()
@@ -250,22 +232,27 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         //rea
-        if let revealVC = revealViewController(){
+        let revealVC = revealViewController()!
             revealVC.rearViewRevealWidth = 280
-            //            navigationItem.leftBarButtonItem?.target = revealVC
-            //            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
-            //            view.addGestureRecognizer(revealVC.panGestureRecognizer())
+//        revealVC.clipsViewsToBounds = true
+   
+     
+    
+           
+ 
             navigationItem.leftBarButtonItem?.target = revealVC
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealVC.panGestureRecognizer())
             
-            
-        }
+        
         
 
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

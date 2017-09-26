@@ -22,7 +22,16 @@ class MenuController: UITableViewController {
     var userNickname = ""
     
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         print("验证"+token)
