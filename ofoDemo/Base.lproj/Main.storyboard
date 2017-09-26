@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nnZ-dN-kdI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nnZ-dN-kdI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Menu Controller-->
         <scene sceneID="EmF-i3-6Uv">
@@ -50,7 +55,7 @@
                                                             <rect key="frame" x="94" y="0.0" width="72" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-GD-ukx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="34"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="64.5" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="U9f-pO-wyX"/>
                                                                     </constraints>
@@ -172,6 +177,7 @@
                                                 <constraint firstItem="7ok-Sl-jrj" firstAttribute="centerY" secondItem="k4v-tF-iTC" secondAttribute="centerY" id="FOW-sb-Nye"/>
                                                 <constraint firstItem="l7f-VF-LbP" firstAttribute="centerY" secondItem="k4v-tF-iTC" secondAttribute="centerY" id="IEp-Qc-O5a"/>
                                                 <constraint firstItem="7ok-Sl-jrj" firstAttribute="leading" secondItem="k4v-tF-iTC" secondAttribute="leading" constant="30" id="Myq-ar-mKW"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="l7f-VF-LbP" secondAttribute="trailing" constant="20" symbolic="YES" id="U1f-aR-D99"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -470,7 +476,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Gf1-3L-9LA"/>
-                                                    <constraint firstAttribute="width" constant="250" id="mjJ-IV-j04"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="mjJ-IV-j04"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -480,7 +486,6 @@
                                                 <rect key="frame" x="0.0" y="40" width="250" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Aq8-7m-mb1"/>
-                                                    <constraint firstAttribute="width" constant="250" id="S9E-Di-PuE"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -495,7 +500,7 @@
                                         <rect key="frame" x="0.0" y="92" width="250" height="33"/>
                                         <color key="backgroundColor" red="0.94530454654962026" green="1" blue="0.15345116878849419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="EpH-io-voM"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="EpH-io-voM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <state key="normal" title="登   录">
@@ -589,7 +594,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zwd-xC-0Wz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bHS-ba-lkC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1367,7 +1372,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5JA-Mq-lfJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eKn-hy-HLb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

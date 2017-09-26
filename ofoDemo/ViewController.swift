@@ -109,6 +109,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                 print(self.manyAnnotation)
             
                 
+                
                 self.mapView.addAnnotations(self.manyAnnotation)
              self.mapView.showAnnotations(self.manyAnnotation, animated: true)
   
@@ -167,15 +168,12 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         view.bringSubview(toFront: panelView)
         mapView.delegate = self
         //        mapView.zoomLevel = 17 改
-        mapView.zoomLevel = 13
+        mapView.zoomLevel = 10
         
         //定位信息
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
+       mapView.showsUserLocation = true
+        mapView.userTrackingMode = .followWithHeading
         
-        let r = MAUserLocationRepresentation()
-        r.showsHeadingIndicator = true
-        mapView.update(r)
 
         
         getNearbyInformation()

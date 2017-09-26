@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>易停需要访问您的位置信息</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -34,9 +36,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>小黄车需要打开摄像头打开车位二维码</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>小黄车需要持续追踪您的骑行位置以便计费</string>
+	<string>易停需要持续追踪您的行驶位置以便计费</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>小黄车需要定位以便搜索附近可用的车辆</string>
+	<string>易停需要定位以便搜索附近可用的车位</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
