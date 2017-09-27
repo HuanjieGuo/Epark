@@ -36,17 +36,20 @@ extension UIView{
     
 }
 
-
-@IBDesignable class MyProviewLable: UILabel {
-    
-}
-
-@IBDesignable class MyProviewText: UITextField {
-    
-}
-@IBDesignable class MyProviewButton: UIButton {
-    
-}
+//
+//@IBDesignable class MyProviewLable: UILabel {
+//    
+//}
+//
+//@IBDesignable class MyProviewText: UITextField {
+//    
+//}
+//@IBDesignable class MyProviewButton: UIButton {
+//    
+//}
+//@IBDesignable class MyProviewContainer: UIView {
+//    
+//}
 
 
 

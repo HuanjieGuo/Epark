@@ -15,7 +15,7 @@ class LoginController: UIViewController {
     
     
         var base: baseClass = baseClass()
-    @IBAction func loginBtn(_ sender: MyProviewButton) {
+    @IBAction func loginBtn(_ sender: UIButton) {
         checkUserInformation()
         
     }

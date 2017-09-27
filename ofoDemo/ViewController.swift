@@ -230,27 +230,17 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         //rea
-        let revealVC = revealViewController()!
+         let revealVC = revealViewController()!
             revealVC.rearViewRevealWidth = 280
-//        revealVC.clipsViewsToBounds = true
-   
-     
-    
-           
- 
+        
+        
             navigationItem.leftBarButtonItem?.target = revealVC
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealVC.panGestureRecognizer())
-            
-        
-        
-
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

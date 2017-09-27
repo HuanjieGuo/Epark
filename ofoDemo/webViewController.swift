@@ -12,11 +12,13 @@ import WebKit
 class webViewController: UIViewController  {
 
     var webView:WKWebView!
-   
+ 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         webView = WKWebView(frame: self.view.frame)
+        
         view.addSubview(webView)
         
         self.title = "汽车资讯"

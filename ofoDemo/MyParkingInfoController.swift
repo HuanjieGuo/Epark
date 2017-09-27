@@ -17,6 +17,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
     
     var baseInfo: baseClass = baseClass()
     var baseInfo2: baseClass = baseClass()
+    var baseInfo3: baseClass = baseClass()
     
   
 
@@ -49,8 +50,14 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //传值
+        baseInfo3.cacheSetDicOnly(key: "park", value: myParkPlace[indexPath.row])
+        
+        //跳转
         performSegue(withIdentifier: "showDetail", sender: self)
+        self.tableView?.deselectRow(at: indexPath, animated: true)
     }
+
 
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {

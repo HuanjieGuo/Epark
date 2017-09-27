@@ -28,11 +28,13 @@ class MenuController: UITableViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+    
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.view.clipsToBounds = false
 
         print("验证"+token)
         if !token.isEmpty{

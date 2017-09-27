@@ -36,7 +36,18 @@ class baseClass{
         let tmp = userInformation.array(forKey: key)
         return tmp! as! [Dictionary<String, Any>]
     }
+    //读取字典
+    func cacheSetDicOnly(key:String,value: Dictionary<String, Any>){
+        let userInformation = UserDefaults()
+        userInformation.setValue(value, forKey: key)
+        print("获取成功\n\n\(value)")
+    }
     
+    func cacheGetDicOnly(key:String) -> Dictionary<String, Any> {
+        let userInformation = UserDefaults()
+        let tmp = userInformation.dictionary(forKey: key)
+        return tmp! as! Dictionary<String, Any>
+    }
     //读取整数
     func cacheSetInt(key:String,value: Int){
         let userInformation = UserDefaults()

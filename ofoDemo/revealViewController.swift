@@ -21,7 +21,6 @@ class revealViewController: SWRevealViewController {
         
 //        self.performSegue(withIdentifier: "sw_front", sender: self)
         
-        
         // Do any additional setup after loading the view.
     }
     
@@ -31,7 +30,8 @@ class revealViewController: SWRevealViewController {
     }
     
     
-
+    
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
