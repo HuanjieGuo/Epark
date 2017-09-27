@@ -168,7 +168,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         view.bringSubview(toFront: panelView)
         mapView.delegate = self
         //        mapView.zoomLevel = 17 改
-        mapView.zoomLevel = 10
+        mapView.zoomLevel = 17
         
         //定位信息
        mapView.showsUserLocation = true

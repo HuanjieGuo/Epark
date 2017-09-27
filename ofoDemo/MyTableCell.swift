@@ -17,6 +17,7 @@ class MyTableCell: UITableViewCell {
     var base: baseClass = baseClass()
     var token = ""
     var sign:String = String()
+    var button:UIButton!
     //初始化
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -28,24 +29,14 @@ class MyTableCell: UITableViewCell {
        
         
         self.addSubview(switchT)
-        
-            
-//        
-//        button = UIButton(frame:CGRect(x: 0, y: 0, width: 40, height: 25))
-//        button.setTitle("点击", for: .normal)
-//        button.backgroundColor = UIColor.yellow
-//        button.layer.cornerRadius = 5
-//        button.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-//        
-//        //button点击
-//        button.addTarget(self, action: #selector(tapped(_:)), for: .touchUpInside)
-//        self.addSubview(button)
     }
     
+
     //布局
     override func layoutSubviews() {
         super.layoutSubviews()
         switchT.center = CGPoint(x: bounds.size.width-35, y: bounds.midY)
+    
     }
     
     
@@ -58,6 +49,7 @@ class MyTableCell: UITableViewCell {
 //        
 //    }
     var placeId:Int! = 10000
+    
     
     
     func turnSwitch(_ switchT:UISwitch) {
@@ -130,10 +122,6 @@ class MyTableCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
 
 }

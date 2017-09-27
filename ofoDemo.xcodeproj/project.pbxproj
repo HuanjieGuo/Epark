@@ -25,9 +25,10 @@
 		CF7EB2231F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21F1F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 */; };
 		CF7EB2241F3826A80049FE23 /* 请输入车位号.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB2201F3826A80049FE23 /* 请输入车位号.mp3 */; };
 		CF9577261F529D8C004F40DD /* passValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9577251F529D8C004F40DD /* passValue.swift */; };
-		CFA6CBE01F41732A005DF17E /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6CBDF1F41732A005DF17E /* ErrorViewController.swift */; };
+		CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */; };
 		CFC6850F1F356F6E00BE11AE /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6850E1F356F6E00BE11AE /* InputController.swift */; };
 		CFC685111F35731100BE11AE /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC685101F35731100BE11AE /* ColorHelper.swift */; };
+		CFE4C4291F7BA74300D34E2E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4C4281F7BA74300D34E2E /* ContainerView.swift */; };
 		CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */; };
 		CFF349511EF3CFCB008F65EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF349501EF3CFCB008F65EA /* ViewController.swift */; };
 		CFF349541EF3CFCB008F65EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF349521EF3CFCB008F65EA /* Main.storyboard */; };
@@ -76,9 +77,10 @@
 		CF7EB2201F3826A80049FE23 /* 请输入车位号.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "请输入车位号.mp3"; sourceTree = "<group>"; };
 		CF8A203B1F19BB7400366A1D /* ofoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF9577251F529D8C004F40DD /* passValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passValue.swift; sourceTree = "<group>"; };
-		CFA6CBDF1F41732A005DF17E /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkDetailController.swift; sourceTree = "<group>"; };
 		CFC6850E1F356F6E00BE11AE /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		CFC685101F35731100BE11AE /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		CFE4C4281F7BA74300D34E2E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		CFF3494B1EF3CFCB008F65EA /* ofoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF349501EF3CFCB008F65EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,10 +179,11 @@
 				CF2A97001F374CA000AF0D8A /* UnlockController.swift */,
 				CF1234CF1F36E3FB00597CC8 /* PakingController.swift */,
 				CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */,
-				CFA6CBDF1F41732A005DF17E /* ErrorViewController.swift */,
+				CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */,
 				CFF349521EF3CFCB008F65EA /* Main.storyboard */,
 				CF42A0021F4B140B004EC89B /* LoginController.swift */,
 				CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */,
+				CFE4C4281F7BA74300D34E2E /* ContainerView.swift */,
 				CFC685101F35731100BE11AE /* ColorHelper.swift */,
 				CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */,
 				CF0F52681F17695000DAEB89 /* MenuController.swift */,
@@ -288,12 +291,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = hjackguo.github.io;
 				TargetAttributes = {
 					CFF3494A1EF3CFCB008F65EA = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -303,11 +306,13 @@
 					};
 					CFF3495E1EF3CFCB008F65EA = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CFF3494A1EF3CFCB008F65EA;
 					};
 					CFF349691EF3CFCB008F65EA = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CFF3494A1EF3CFCB008F65EA;
 					};
@@ -420,7 +425,7 @@
 			files = (
 				CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */,
 				CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */,
-				CFA6CBE01F41732A005DF17E /* ErrorViewController.swift in Sources */,
+				CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */,
 				CF42A0051F4C1656004EC89B /* revealViewController.swift in Sources */,
 				CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */,
 				CF26695B1F264777000EA704 /* MyPinAnnotation.swift in Sources */,
@@ -431,6 +436,7 @@
 				CF0109AE1F5FA2BD00E15A3C /* MyParkingInfoController.swift in Sources */,
 				CF1234CE1F36D4A200597CC8 /* UIViewHelper.swift in Sources */,
 				CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */,
+				CFE4C4291F7BA74300D34E2E /* ContainerView.swift in Sources */,
 				CF2A97011F374CA000AF0D8A /* UnlockController.swift in Sources */,
 				CF1494B41F31E51F00417FC7 /* ScanController.swift in Sources */,
 				CFF349801EF3E094008F65EA /* webViewController.swift in Sources */,
@@ -500,7 +506,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -508,7 +516,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -550,7 +562,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -558,7 +572,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

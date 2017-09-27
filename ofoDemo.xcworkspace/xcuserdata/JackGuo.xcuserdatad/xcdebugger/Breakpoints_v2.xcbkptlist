@@ -259,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/LoginController.swift"
-            timestampString = "526896323.824525"
+            timestampString = "528184265.393535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -274,30 +274,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ofoDemo/MyTableCell.swift"
-            timestampString = "526922039.734743"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "MyTableCell"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.109762"
+            timestampString = "528114098.605041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "383"
             endingLineNumber = "383"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "mapView(_:viewFor:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -307,13 +291,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.110708"
+            timestampString = "528114098.605552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
             endingLineNumber = "106"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getNearbyInformation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -323,13 +307,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.111139"
+            timestampString = "528114098.60594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "458"
             endingLineNumber = "458"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -339,13 +323,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.111523"
+            timestampString = "528114098.60632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getNearbyInformation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -355,13 +339,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.111897"
+            timestampString = "528114098.606683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getNearbyInformation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -371,13 +355,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.112272"
+            timestampString = "528114098.607044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
             endingLineNumber = "108"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getNearbyInformation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -387,13 +371,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.112641"
+            timestampString = "528114098.607409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
             endingLineNumber = "111"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getNearbyInformation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -403,13 +387,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.11301"
+            timestampString = "528114098.607774"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "165"
             endingLineNumber = "165"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -419,13 +403,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ofoDemo/ViewController.swift"
-            timestampString = "528106909.113459"
+            timestampString = "528114098.608137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "242"
             endingLineNumber = "242"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

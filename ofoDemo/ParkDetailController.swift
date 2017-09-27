@@ -8,7 +8,7 @@
 
 import UIKit
 import MIBlurPopup
-class ErrorViewController: UIViewController {
+class ErrorViewController: UIViewController{
     @IBAction func gestureTap(_ sender: UITapGestureRecognizer) {
         self.close()
     }

@@ -21,7 +21,6 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
   
 
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         FTIndicator.showProgressWithmessage("Please waiting ...")
@@ -38,6 +37,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         self.tableView!.dataSource = self
         self.tableView!.allowsSelection = false
  
+        tableView?.allowsSelection = true
 
         self.tableView!.register(MyTableCell.self, forCellReuseIdentifier: "tableCell")
     
@@ -48,8 +48,9 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         // Do any additional setup after loading the view.
     }
     
-
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
 
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -90,7 +91,6 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     
     // MARK: - Navigation
