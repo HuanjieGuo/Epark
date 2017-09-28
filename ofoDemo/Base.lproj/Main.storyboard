@@ -236,6 +236,9 @@
                                                 <constraint firstItem="h3p-dL-EVA" firstAttribute="leading" secondItem="jOE-6K-s6U" secondAttribute="leading" constant="30" id="oO6-5N-m7t"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="C1J-Ja-4ut" kind="modal" identifier="myParkPlace" modalTransitionStyle="crossDissolve" id="c2j-5x-gVC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZaB-KE-yOt">
                                         <rect key="frame" x="0.0" y="326" width="375" height="44"/>
@@ -398,11 +401,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nlo-lp-edv">
                         <barButtonItem key="leftBarButtonItem" image="user_center_icon" id="61C-Yu-vBf"/>
-                        <barButtonItem key="rightBarButtonItem" image="parkTo" id="7tf-lT-j2J">
-                            <connections>
-                                <segue destination="IqU-Ms-iHK" kind="show" identifier="myParkPlace" id="3Dt-Jx-wTy"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="gift_icon" id="7tf-lT-j2J"/>
                     </navigationItem>
                     <connections>
                         <outlet property="panelView" destination="O9s-bL-Cod" id="zQQ-DN-5hT"/>
@@ -436,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNg-E6-OqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480.8000000000002" y="-161.46926536731635"/>
+            <point key="canvasLocation" x="2807.1999999999998" y="-258.62068965517244"/>
         </scene>
         <!--My Parking Info Controller-->
         <scene sceneID="7eA-V8-MhI">
@@ -451,14 +450,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WOo-8C-FVx"/>
+                    <navigationItem key="navigationItem" id="WOo-8C-FVx">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="aZ1-qY-FGW">
+                            <connections>
+                                <action selector="returnBtn:" destination="IqU-Ms-iHK" id="23q-DZ-MJL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="EeR-L0-HKZ" kind="modal" identifier="showDetail" customClass="MIBlurPopupSegue" customModule="MIBlurPopup" modalPresentationStyle="formSheet" modalTransitionStyle="partialCurl" id="Xga-SJ-u7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e22-v5-2hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4191.1999999999998" y="222.63868065967017"/>
+            <point key="canvasLocation" x="2430" y="458"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="TSD-Ic-WkV">
@@ -599,7 +604,6 @@
         <!--Navigation Controller-->
         <scene sceneID="vqp-Y1-21J">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xGt-4Y-9vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="McW-SE-IsB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zwd-xC-0Wz"/>
@@ -612,6 +616,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w2W-xy-n10"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGt-4Y-9vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118" y="557"/>
         </scene>
@@ -933,7 +938,7 @@
                 </tapGestureRecognizer>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24u-t5-v8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5196" y="222.63868065967017"/>
+            <point key="canvasLocation" x="3321" y="458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JFm-BU-18u">
@@ -1144,7 +1149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wc4-rb-7cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2660" y="874"/>
+            <point key="canvasLocation" x="3130" y="1107"/>
         </scene>
         <!--Paking Controller-->
         <scene sceneID="hsW-hh-9X5">
@@ -1336,7 +1341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oc7-j3-ytd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3394" y="874"/>
+            <point key="canvasLocation" x="3732" y="873.91304347826099"/>
         </scene>
         <!--Container View Controller-->
         <scene sceneID="dai-hZ-cLF">
@@ -1465,7 +1470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5O-Ja-qXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4857" y="791"/>
+            <point key="canvasLocation" x="5196" y="790.25487256371821"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qo2-00-Epn">
@@ -1484,7 +1489,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptw-SS-74J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="-161"/>
+            <point key="canvasLocation" x="1546" y="-290"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YOt-Wq-hWk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C1J-Ja-4ut" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hii-zN-jaN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IqU-Ms-iHK" kind="relationship" relationship="rootViewController" id="WoB-5d-di8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7M-5t-aQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="459"/>
         </scene>
     </scenes>
     <resources>
@@ -1498,12 +1521,12 @@
         <image name="HomePage_UserGuide" width="20" height="20"/>
         <image name="UserInfo_defaultIcon" width="80" height="80"/>
         <image name="btn_unenableTorch_w" width="12" height="19"/>
+        <image name="gift_icon" width="25" height="25"/>
         <image name="inputBlikeNo" width="12" height="19"/>
         <image name="leftBottomImage" width="40" height="40"/>
         <image name="login" width="800" height="1280"/>
         <image name="mainLogo" width="323" height="260"/>
         <image name="nextArrow_unenable" width="25" height="19"/>
-        <image name="parkTo" width="32" height="32"/>
         <image name="redPackerGuideYellow" width="164" height="96"/>
         <image name="rightBottomImage" width="40" height="40"/>
         <image name="user_center_icon" width="25" height="25"/>

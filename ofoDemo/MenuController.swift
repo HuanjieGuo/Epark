@@ -25,6 +25,12 @@ class MenuController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        self.tableView?.deselectRow(at: indexPath, animated: true)
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -61,6 +67,7 @@ class MenuController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

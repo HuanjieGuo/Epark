@@ -11,10 +11,14 @@ import FTIndicator
 
 class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
+    @IBAction func returnBtn(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
     var tableView:UITableView?
     var token = ""
     var myParkPlace = [[String:Any]]()
     
+ 
     var baseInfo: baseClass = baseClass()
     var baseInfo2: baseClass = baseClass()
     var baseInfo3: baseClass = baseClass()

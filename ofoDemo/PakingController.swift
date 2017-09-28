@@ -87,9 +87,13 @@ class PakingController: UIViewController {
 
         self.seuge()
             FTIndicator.setIndicatorStyle(.light)
+            
             FTIndicator.showNotification(with: #imageLiteral(resourceName: "UnlockSucess"), title: "成功支付", message: "已成功从您的钱包里扣除本次停车费\(String(format:"%.2f",self.pakingMoneyNow))元")
+            
+            
         }))
         alert.present()
+
 
         
     }
