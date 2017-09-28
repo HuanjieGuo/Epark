@@ -32,28 +32,28 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
 
     @IBOutlet weak var panelView: UIView!
     @IBAction func locationTap(_ sender: Any) {
-
-
-
-      
-//        self.pin.isLockedToScreen = true
-//        self.pin.lockedScreenPoint = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
+        clikLocation()
+    }
+    
+    func clikLocation() {
+        
+        //        self.pin.isLockedToScreen = true
+        //        self.pin.lockedScreenPoint = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
         
         self.pin.lockedScreenPoint = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
-//        self.pin.isLockedToScreen = true
+        //        self.pin.isLockedToScreen = true
         self.pin.coordinate.latitude = self.mapView.userLocation.coordinate.latitude
         self.pin.coordinate.longitude = self.mapView.userLocation.coordinate.longitude
+        self.mapView.zoomLevel = 15
         
         
-
+        
         self.mapView.addAnnotation(self.pin)
         
-       
+        
         //        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute:
         //            {
         self.mapView.showAnnotations([self.pin], animated: true)
-        
-        
 
     }
 
@@ -167,8 +167,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
        
         view.bringSubview(toFront: panelView)
         mapView.delegate = self
-        //        mapView.zoomLevel = 17 改
-        mapView.zoomLevel = 17
+ 
         
         //定位信息
        mapView.showsUserLocation = true
@@ -202,6 +201,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         //            {
        
         self.mapView.showAnnotations([self.pin], animated: true)
+        self.clikLocation()
         
         //        })
         })
@@ -214,6 +214,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         self.sign = base.cacheGetString(key: "sign")
         token = self.sign
         //
+        
        
 
         
@@ -498,11 +499,6 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
 //            destVC.myParkPlace = myParkPlace
             
 
-
-        //面页跳转
-            
-
-            
         }
     }
 }
