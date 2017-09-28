@@ -13,12 +13,15 @@ class webViewController: UIViewController  {
 
     var webView:WKWebView!
  
-
+    @IBAction func returnBtn(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         webView = WKWebView(frame: self.view.frame)
-        
+        self.navigationItem.leftBarButtonItem?.title = "返回"
         view.addSubview(webView)
         
         self.title = "汽车资讯"

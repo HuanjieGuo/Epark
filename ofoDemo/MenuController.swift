@@ -34,9 +34,7 @@ class MenuController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.view.clipsToBounds = false
 
-        print("验证"+token)
         if !token.isEmpty{
             
     

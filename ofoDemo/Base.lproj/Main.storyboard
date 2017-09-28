@@ -293,7 +293,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rPg-Wc-dxy" kind="push" id="ZOL-7l-L5e"/>
+                                            <segue destination="vya-xR-TZn" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ZOL-7l-L5e"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -316,7 +316,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r25-OG-y9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024.8" y="-161.46926536731635"/>
+            <point key="canvasLocation" x="52" y="-224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -426,11 +426,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="krf-8f-UIE"/>
+                    <navigationItem key="navigationItem" id="krf-8f-UIE">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="yVI-LX-UJh">
+                            <connections>
+                                <action selector="returnBtn:" destination="rPg-Wc-dxy" id="8IZ-Q2-WGV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNg-E6-OqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142" y="-161"/>
+            <point key="canvasLocation" x="2480.8000000000002" y="-161.46926536731635"/>
         </scene>
         <!--My Parking Info Controller-->
         <scene sceneID="7eA-V8-MhI">
@@ -447,12 +453,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="WOo-8C-FVx"/>
                     <connections>
-                        <segue destination="EeR-L0-HKZ" kind="custom" identifier="showDetail" customClass="MIBlurPopupSegue" customModule="MIBlurPopup" id="Xga-SJ-u7m"/>
+                        <segue destination="EeR-L0-HKZ" kind="modal" identifier="showDetail" customClass="MIBlurPopupSegue" customModule="MIBlurPopup" modalPresentationStyle="formSheet" modalTransitionStyle="partialCurl" id="Xga-SJ-u7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e22-v5-2hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3852" y="222.63868065967017"/>
+            <point key="canvasLocation" x="4191.1999999999998" y="222.63868065967017"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="TSD-Ic-WkV">
@@ -582,8 +588,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="5JA-Mq-lfJ" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="XbF-GB-m3n"/>
                         <segue destination="McW-SE-IsB" kind="push" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="OyW-C4-0yl"/>
+                        <segue destination="iqb-xo-hp7" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="WFg-El-x0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCy-gj-Gbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -593,6 +599,7 @@
         <!--Navigation Controller-->
         <scene sceneID="vqp-Y1-21J">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGt-4Y-9vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="McW-SE-IsB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zwd-xC-0Wz"/>
@@ -605,7 +612,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w2W-xy-n10"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xGt-4Y-9vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118" y="557"/>
         </scene>
@@ -840,12 +846,6 @@
         <!--Error View Controller-->
         <scene sceneID="E06-36-hey">
             <objects>
-                <tapGestureRecognizer id="49L-bM-POk">
-                    <connections>
-                        <action selector="gestureTap:" destination="EeR-L0-HKZ" id="Okx-Gk-qzo"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="24u-t5-v8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="EeR-L0-HKZ" customClass="ErrorViewController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kjb-YX-fzs"/>
@@ -926,8 +926,14 @@
                         <outlet property="myPopupView" destination="1zS-1T-vsX" id="0zu-rY-7pU"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="49L-bM-POk">
+                    <connections>
+                        <action selector="gestureTap:" destination="EeR-L0-HKZ" id="Okx-Gk-qzo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24u-t5-v8X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4858" y="223"/>
+            <point key="canvasLocation" x="5196" y="222.63868065967017"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JFm-BU-18u">
@@ -958,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yib-wx-IpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="382"/>
+            <point key="canvasLocation" x="-772" y="120"/>
         </scene>
         <!--Unlock Controller-->
         <scene sceneID="1HP-wL-Duh">
@@ -1335,7 +1341,6 @@
         <!--Container View Controller-->
         <scene sceneID="dai-hZ-cLF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U5O-Ja-qXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dwk-86-pe2" customClass="ContainerViewController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fvS-tf-Kpy"/>
@@ -1458,26 +1463,28 @@
                         <outlet property="parkStatus" destination="79N-D1-nlJ" id="1I3-xG-I2d"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5O-Ja-qXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4857" y="791"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="XIW-du-ppm">
+        <scene sceneID="qo2-00-Epn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5JA-Mq-lfJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vya-xR-TZn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eKn-hy-HLb">
+                    <navigationItem key="navigationItem" id="H7v-0E-mux"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ybh-qo-DoF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iqb-xo-hp7" kind="relationship" relationship="rootViewController" id="lUy-qL-aOs"/>
+                        <segue destination="rPg-Wc-dxy" kind="relationship" relationship="rootViewController" id="Pgx-sr-YZ7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iH5-hB-uVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptw-SS-74J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="-161.46926536731635"/>
+            <point key="canvasLocation" x="1604" y="-161"/>
         </scene>
     </scenes>
     <resources>

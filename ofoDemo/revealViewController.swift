@@ -18,7 +18,7 @@ class revealViewController: SWRevealViewController {
     var userNickname = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        performSegue(withIdentifier: "sw_front", sender: self)
 //        self.performSegue(withIdentifier: "sw_front", sender: self)
         
         // Do any additional setup after loading the view.
@@ -38,11 +38,11 @@ class revealViewController: SWRevealViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sw_rear"{
             
-//            let destVC = segue.destination as! MenuController
-//            destVC.userID = userID
-//            destVC.token = token
-//            destVC.userPhoto = userPhoto
-//            destVC.userNickname = userNickname
+            let destVC = segue.destination as! MenuController
+            destVC.userID = userID
+            destVC.token = token
+            destVC.userPhoto = userPhoto
+            destVC.userNickname = userNickname
 //            
         }
 
