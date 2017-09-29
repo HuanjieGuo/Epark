@@ -108,10 +108,13 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                 
                 print(self.manyAnnotation)
             
-                
-                
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5, execute:
+                     {
+             
                 self.mapView.addAnnotations(self.manyAnnotation)
+            
              self.mapView.showAnnotations(self.manyAnnotation, animated: true)
+                })
   
     
             }
@@ -160,7 +163,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         // map
         if mapView == nil{
         mapView = MAMapView(frame: view.bounds)
-        view.addSubview(mapView)
+            view.addSubview(mapView)
+        
         }
         mapView.removeAnnotations(manyAnnotation)
         mapView.removeOverlays(mapView.overlays)
@@ -201,6 +205,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         //            {
        
         self.mapView.showAnnotations([self.pin], animated: true)
+                        
         self.clikLocation()
         
         //        })
@@ -368,32 +373,58 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
             annotationView = MAPinAnnotationView(annotation: annotation, reuseIdentifier: reUseID)
         }
         
+//        var button : UIButton
+//        button = UIButton(frame:CGRect(x: 0, y: 0, width: 30, height: 30))
+//        button.setImage(#imageLiteral(resourceName: "unlock"), for: .normal)
+//
+//        //button点击
+//        button.addTarget(self, action: #selector(tapped(_:)), for: .touchUpInside)
+//        //                self.addSubview(button)
+//
+//        annotationView?.rightCalloutAccessoryView = button
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.image = #imageLiteral(resourceName: "unlock")
+        imageView.isUserInteractionEnabled = true
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(tapHandler(sender:)))
+        imageView.addGestureRecognizer(tapGR)
+        annotationView?.rightCalloutAccessoryView = imageView
         
+        
+    
         annotationView?.image=#imageLiteral(resourceName: "HomePage_nearbyPark")
         annotationView?.canShowCallout = true
         annotationView?.animatesDrop = true
+        
        
-        var button : UIButton
-        button = UIButton(frame:CGRect(x: 0, y: 0, width: 50, height: 25))
-        button.setTitle("开锁", for: .normal)
-        button.setTitleColor(UIColor.blue, for: .normal)
         
-                button.backgroundColor = UIColor.clear
-                button.layer.cornerRadius = 10
-                button.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-        button.titleColor(for: .normal)
+//        button.setTitle("开锁", for: .normal)
+//        button.setTitleColor(UIColor.white, for: .normal)
+       
         
-                //button点击
-               button.addTarget(self, action: #selector(tapped(_:)), for: .touchUpInside)
-//                self.addSubview(button)
+//                button.backgroundColor = UIColor.blue
+//                button.layer.cornerRadius = 10
+//                button.titleLabel?.font = UIFont.systemFont(ofSize: 17)
 
-        annotationView?.rightCalloutAccessoryView = button
+ 
         
         return annotationView
         
     }
     
-    
+    func tapHandler(sender:UITapGestureRecognizer) {
+        for i in 0...self.parkInformation.count-1
+            
+        {
+            if testLatitude == parkInformation[i]["latitude"] as! Double{
+                print("true \(i)")
+                tag = i
+                break
+            }
+            
+        }
+        performSegue(withIdentifier: "showParkInfo", sender: self)
+        
+    }
     
         func tapped(_ button:UIButton) {
             for i in 0...self.parkInformation.count-1
