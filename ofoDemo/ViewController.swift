@@ -376,9 +376,12 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         var button : UIButton
         button = UIButton(frame:CGRect(x: 0, y: 0, width: 50, height: 25))
         button.setTitle("开锁", for: .normal)
-                button.backgroundColor = UIColor.blue
+        button.setTitleColor(UIColor.blue, for: .normal)
+        
+                button.backgroundColor = UIColor.clear
                 button.layer.cornerRadius = 10
                 button.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        button.titleColor(for: .normal)
         
                 //button点击
                button.addTarget(self, action: #selector(tapped(_:)), for: .touchUpInside)
