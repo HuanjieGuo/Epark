@@ -16,6 +16,7 @@
 		CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1234CF1F36E3FB00597CC8 /* PakingController.swift */; };
 		CF1494B41F31E51F00417FC7 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1494B31F31E51F00417FC7 /* ScanController.swift */; };
 		CF1494B61F33177800417FC7 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF1494B51F33177800417FC7 /* CodeScan.bundle */; };
+		CF2375441F924B2000DC4291 /* RigisterSucceedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2375431F924B2000DC4291 /* RigisterSucceedController.swift */; };
 		CF26695B1F264777000EA704 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26695A1F264777000EA704 /* MyPinAnnotation.swift */; };
 		CF2A97011F374CA000AF0D8A /* UnlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A97001F374CA000AF0D8A /* UnlockController.swift */; };
 		CF42A0031F4B140B004EC89B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42A0021F4B140B004EC89B /* LoginController.swift */; };
@@ -68,6 +69,7 @@
 		CF1234CF1F36E3FB00597CC8 /* PakingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PakingController.swift; sourceTree = "<group>"; };
 		CF1494B31F31E51F00417FC7 /* ScanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		CF1494B51F33177800417FC7 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		CF2375431F924B2000DC4291 /* RigisterSucceedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RigisterSucceedController.swift; sourceTree = "<group>"; };
 		CF26695A1F264777000EA704 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
 		CF2A97001F374CA000AF0D8A /* UnlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockController.swift; sourceTree = "<group>"; };
 		CF42A0021F4B140B004EC89B /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				CF42A0021F4B140B004EC89B /* LoginController.swift */,
 				CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */,
 				CFC685101F35731100BE11AE /* ColorHelper.swift */,
+				CF2375431F924B2000DC4291 /* RigisterSucceedController.swift */,
 				CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */,
 				CF0F52681F17695000DAEB89 /* MenuController.swift */,
 				CFC6850E1F356F6E00BE11AE /* InputController.swift */,
@@ -434,6 +437,7 @@
 				CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */,
 				CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */,
 				CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */,
+				CF2375441F924B2000DC4291 /* RigisterSucceedController.swift in Sources */,
 				CF42A0051F4C1656004EC89B /* revealViewController.swift in Sources */,
 				CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */,
 				CF26695B1F264777000EA704 /* MyPinAnnotation.swift in Sources */,

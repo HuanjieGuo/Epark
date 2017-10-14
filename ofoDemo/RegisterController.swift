@@ -23,8 +23,38 @@ class RegisterController: UIViewController,UITextFieldDelegate {
         self.dismiss(animated: true)
     }
     @IBAction func rigisterBtnTap(_ sender: Any) {
+        if (userName.text == ""||passcode.text == ""){
+            FTIndicator.showToastMessage("账号或密码为空，请重新输入！")
+        }
+        else if phone.text == ""||securityCode.text==""{
+             FTIndicator.showToastMessage("手机或验证码为空，请重新输入！")
+        }
+        else {
+            let params:[String : Any] = ["username":userName.text!,"password":passcode.text!,"phone":Int(phone.text!)!,"checkCode":Int(securityCode.text!)!]
+            do{
+                let opt = try HTTP.POST("http://139.196.72.74/api/v1/front/register",parameters: params)
+                opt.start{respondse in
+                    let result = JSON(respondse.data)["message"]
+                    if respondse.statusCode == 200{
+                        DispatchQueue.main.async {
+                            
+                        self.performSegue(withIdentifier: "registerSucceed", sender: self)
+                        }
+                    }
+                    if respondse.statusCode == 403{
+                        FTIndicator.showToastMessage(result.string)
+                    }
+   
+                }
+            }catch let error{
+                  print("请求失败：\(error)")
+            }
+            
+        }
+        
     }
     @IBAction func sendSecurityCode(_ sender: Any) {
+        
         
         self.alertLabel.isHidden = true
         if (userName.text == ""||passcode.text == ""){
@@ -119,14 +149,10 @@ class RegisterController: UIViewController,UITextFieldDelegate {
         }
         let newLength = text.characters.count + string.characters.count - range.length
         if newLength >= 11 {
-//            goBtn.setImage(#imageLiteral(resourceName: "nextArrow_enable"), for: .normal)
-//            goBtn.backgroundColor = UIColor.ofo
-//            goBtn.isEnabled = true
+
               sendSecurityCodeBtn.isEnabled = true
         } else {
-//            goBtn.setImage(#imageLiteral(resourceName: "nextArrow_unenable"), for: .normal)
-//            goBtn.backgroundColor = UIColor.groupTableViewBackground
-//            goBtn.isEnabled = false
+
              sendSecurityCodeBtn.isEnabled = false
         }
         return newLength <= 11

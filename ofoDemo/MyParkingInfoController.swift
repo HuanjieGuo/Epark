@@ -28,10 +28,12 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FTIndicator.showProgressWithmessage("Please waiting ...")
+//        FTIndicator.showProgressWithmessage("Please waiting ...")
         self.title = "我的车位"
-               self.myParkPlace = self.baseInfo.cacheGetDic(key: "info")
-        self.baseInfo2.cacheSetDic(key: "info2", value: self.myParkPlace)
+               myParkPlace = baseInfo.cacheGetDic(key: "info")
+        baseInfo2.cacheSetDic(key: "info2", value: self.myParkPlace)
+        print(myParkPlace.count)
+
         let activityView = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
         activityView.startAnimating()
 
@@ -79,9 +81,9 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
      
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! MyTableCell
-        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute:
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute:
             {
-                FTIndicator.dismissProgress()
+      
         cell.textLabel?.text = self.myParkPlace[indexPath.row]["name"] as? String
         
 

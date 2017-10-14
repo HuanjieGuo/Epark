@@ -917,11 +917,94 @@
                         <outlet property="securityCode" destination="N7E-Av-36n" id="kwK-3L-iiF"/>
                         <outlet property="sendSecurityCodeBtn" destination="3r9-cX-4pj" id="EoG-GG-1Rp"/>
                         <outlet property="userName" destination="XlE-xh-xNC" id="Ym7-Yc-F9T"/>
+                        <segue destination="Qzl-fg-1j8" kind="push" identifier="registerSucceed" id="I3h-uA-MpP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIG-g2-e4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1228" y="1320.9895052473764"/>
+        </scene>
+        <!--注册成功-->
+        <scene sceneID="EpP-O1-Ait">
+            <objects>
+                <viewController id="Qzl-fg-1j8" customClass="RigisterSucceedController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QIe-Zg-gQr"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5l-oH-QsX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0cm-aM-Z3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="true" translatesAutoresizingMaskIntoConstraints="NO" id="Qe1-Ji-rhb">
+                                <rect key="frame" x="137" y="140" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="g8V-KP-bdi"/>
+                                    <constraint firstAttribute="height" constant="100" id="xMQ-sV-Q9e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册成功，您可以进行登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97Q-Dj-Itg">
+                                <rect key="frame" x="82" y="290" width="210" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="53G-ZA-UQG"/>
+                                    <constraint firstAttribute="height" constant="21" id="O2q-0C-gdt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CD-Uz-CoB">
+                                <rect key="frame" x="39" y="394" width="297" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="返回登陆页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToLogin:" destination="Qzl-fg-1j8" eventType="touchUpInside" id="LGX-l9-15K"/>
+                                    <segue destination="nnZ-dN-kdI" kind="modal" identifier="returnToMain" id="Lay-tC-qqL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6CD-Uz-CoB" firstAttribute="centerX" secondItem="0cm-aM-Z3R" secondAttribute="centerX" id="0Hy-Gg-K3o"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="centerX" secondItem="Qe1-Ji-rhb" secondAttribute="centerX" id="1Zc-L9-q8s"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="centerX" secondItem="97Q-Dj-Itg" secondAttribute="centerX" id="4o7-Sj-2ce"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="top" secondItem="Qe1-Ji-rhb" secondAttribute="bottom" constant="50" id="9eU-ec-KxV"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="top" secondItem="0cm-aM-Z3R" secondAttribute="top" constant="290" id="Ee6-To-Er2"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="top" secondItem="0cm-aM-Z3R" secondAttribute="top" constant="290" id="Fxc-5f-jjr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6CD-Uz-CoB" secondAttribute="trailing" constant="23" id="H3T-ck-jO2"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="leading" secondItem="0cm-aM-Z3R" secondAttribute="leading" constant="137" id="O4Z-1I-Iqs"/>
+                            <constraint firstAttribute="bottom" secondItem="6CD-Uz-CoB" secondAttribute="bottom" constant="239" id="OBR-3Y-qL9"/>
+                            <constraint firstItem="6CD-Uz-CoB" firstAttribute="centerX" secondItem="97Q-Dj-Itg" secondAttribute="centerX" id="QCF-qq-WQj"/>
+                            <constraint firstItem="6CD-Uz-CoB" firstAttribute="centerX" secondItem="Qe1-Ji-rhb" secondAttribute="centerX" id="ULO-Yt-gxu"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="top" secondItem="QIe-Zg-gQr" secondAttribute="bottom" constant="76" id="X42-6B-s1e"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="top" secondItem="0cm-aM-Z3R" secondAttribute="top" constant="140" id="bdu-EH-CeO"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="top" secondItem="QIe-Zg-gQr" secondAttribute="bottom" constant="76" id="eN8-3E-1Ov"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="centerX" secondItem="0cm-aM-Z3R" secondAttribute="centerX" id="gQR-2j-Q3Z"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="leading" secondItem="0cm-aM-Z3R" secondAttribute="leading" constant="137" id="hmJ-Fn-QAt"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="centerX" secondItem="6CD-Uz-CoB" secondAttribute="centerX" id="jAD-Do-tjF"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="centerX" secondItem="0cm-aM-Z3R" secondAttribute="centerX" id="nOm-U9-6XG"/>
+                            <constraint firstItem="97Q-Dj-Itg" firstAttribute="centerX" secondItem="Qe1-Ji-rhb" secondAttribute="centerX" id="rFW-EX-sUN"/>
+                            <constraint firstItem="X5l-oH-QsX" firstAttribute="top" secondItem="6CD-Uz-CoB" secondAttribute="bottom" constant="239" id="reQ-9v-fqm"/>
+                            <constraint firstItem="6CD-Uz-CoB" firstAttribute="top" secondItem="97Q-Dj-Itg" secondAttribute="bottom" constant="83" id="tfd-x3-zCU"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="top" secondItem="0cm-aM-Z3R" secondAttribute="top" constant="140" id="u3w-d0-1h9"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="top" secondItem="0cm-aM-Z3R" secondAttribute="top" constant="140" id="xbK-xn-ZBP"/>
+                            <constraint firstItem="Qe1-Ji-rhb" firstAttribute="centerX" secondItem="0cm-aM-Z3R" secondAttribute="centerX" id="yxn-E9-vLC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册成功" id="2pz-YI-Lfc">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backIndicator" id="Abv-dQ-MDA">
+                            <connections>
+                                <action selector="return:" destination="Qzl-fg-1j8" id="ubs-cY-uhk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeg-EQ-J73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319.19999999999999" y="1320.9895052473764"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="8nb-tV-GAt">
@@ -1042,7 +1125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h97-eQ-Fhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-327.19999999999999" y="1671.8140929535234"/>
+            <point key="canvasLocation" x="-124" y="2218"/>
         </scene>
         <!--Input Controller-->
         <scene sceneID="bWf-TN-fZa">
@@ -1893,6 +1976,7 @@
         <image name="nextArrow_unenable" width="25" height="19"/>
         <image name="redPackerGuideYellow" width="164" height="96"/>
         <image name="rightBottomImage" width="40" height="40"/>
+        <image name="true" width="128" height="128"/>
         <image name="user_center_icon" width="25" height="25"/>
         <image name="voiceopen" width="45" height="45"/>
         <image name="whiteImage" width="375" height="125"/>

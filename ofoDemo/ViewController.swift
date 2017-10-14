@@ -146,10 +146,12 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
                 }
                 let json = JSON(response.data)
                 var myParkPlace = [[String:Any]]()
+                if(json["result"].count-1>0){
                 for i in 0...json["result"].count-1 {
                     myParkPlace.append(json["result"][i].dictionaryObject!)
                 }
                 print("!!!")
+                }
                 self.baseInfo.cacheSetDic(key: "info", value: myParkPlace)
                 
             }

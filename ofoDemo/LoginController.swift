@@ -42,6 +42,7 @@ class LoginController: UIViewController {
     var userID = ""
     var userPhoto = ""
     
+
     func checkUserInformation()  {
         if !userNameField.text!.isEmpty && !userPasscodeField.text!.isEmpty{
             userName = userNameField.text!
