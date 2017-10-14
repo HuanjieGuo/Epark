@@ -30,6 +30,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     var baseInfo2: baseClass = baseClass()
    
 
+    
     @IBOutlet weak var panelView: UIView!
     @IBAction func locationTap(_ sender: Any) {
         clikLocation()

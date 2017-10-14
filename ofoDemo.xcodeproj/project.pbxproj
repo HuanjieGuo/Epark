@@ -37,6 +37,7 @@
 		CFF349641EF3CFCB008F65EA /* ofoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF349631EF3CFCB008F65EA /* ofoDemoTests.swift */; };
 		CFF3496F1EF3CFCB008F65EA /* ofoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3496E1EF3CFCB008F65EA /* ofoDemoUITests.swift */; };
 		CFF349801EF3E094008F65EA /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3497F1EF3E094008F65EA /* webViewController.swift */; };
+		CFF4FAE51F8FC41800E04372 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4FAE41F8FC41800E04372 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		CFF3496E1EF3CFCB008F65EA /* ofoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ofoDemoUITests.swift; sourceTree = "<group>"; };
 		CFF349701EF3CFCB008F65EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF3497F1EF3E094008F65EA /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
+		CFF4FAE41F8FC41800E04372 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FD2985A6E08D48FB35FF972E /* Pods-ofoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ofoDemo/Pods-ofoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				CF1234CF1F36E3FB00597CC8 /* PakingController.swift */,
 				CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */,
 				CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */,
+				CFF4FAE41F8FC41800E04372 /* RegisterController.swift */,
 				CFF349521EF3CFCB008F65EA /* Main.storyboard */,
 				CF42A0021F4B140B004EC89B /* LoginController.swift */,
 				CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */,
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF4FAE51F8FC41800E04372 /* RegisterController.swift in Sources */,
 				CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */,
 				CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */,
 				CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */,

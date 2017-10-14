@@ -7,14 +7,104 @@
 //
 
 import UIKit
+import APNumberPad
+import SwiftHTTP
+import FTIndicator
+import SwiftyTimer
+import SwiftyJSON
 
-class RegisterController: UIViewController {
+class RegisterController: UIViewController,UITextFieldDelegate {
+
+    @IBOutlet weak var alertLabel: UILabel!
+    @IBOutlet weak var rigisterBtn: UIButton!
+    
+    @IBOutlet weak var sendSecurityCodeBtn: UIButton!
+    @IBAction func backToMainVC(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    @IBAction func rigisterBtnTap(_ sender: Any) {
+    }
+    @IBAction func sendSecurityCode(_ sender: Any) {
+        
+        self.alertLabel.isHidden = true
+        if (userName.text == ""||passcode.text == ""){
+            FTIndicator.showToastMessage("账号或密码为空，请重新输入！")
+        }
+        else {
+            let params = ["phone":Int(phone.text!)]
+            do{
+              let opt = try HTTP.POST("http://139.196.72.74/api/v1/front/register/sms", parameters: params)
+                opt.start{response in
+                    print(response.description)
+                   
+                    let data = JSON(response.data)["message"]
+                    if response.statusCode == 200
+                    {
+                        self.alertLabel.isHidden = false
+                         var timeAll = 60
+                        self.sendSecurityCodeBtn.isEnabled = false
+                           DispatchQueue.main.async {
+                        Timer.every(1, { (timer:Timer) in
+                            timeAll = timeAll - 1
+                            if timeAll == 0 {
+                              
+                                self.sendSecurityCodeBtn.isEnabled = true
+                                self.alertLabel.isHidden = true
+                                self.sendSecurityCodeBtn.setTitle("  获取验证码", for: .normal)
+                                return
+                                
+                            
+                            }
+                            if timeAll>0 {
+                             self.sendSecurityCodeBtn.setTitle("\(timeAll)秒后重试", for: .normal)
+                                
+                            }
+
+                        })
+                        }
+                        
+                    }
+                    if response.statusCode == 403{
+                       
+                        self.alertLabel.text = data.string
+                        self.alertLabel.textColor = UIColor.red
+                        self.alertLabel.isHidden = false
+                        print(response.description)
+                    }
+                    if response.statusCode == 500{
+                      
+                        self.alertLabel.text = data.string
+                        self.alertLabel.textColor = UIColor.red
+                          self.alertLabel.isHidden = false
+                        print("验证   "+data.string!)
+                    }
+                }
+            }catch let error{
+                print("请求失败：\(error)")
+            }
+            
+        
+        }
+
+    }
+    @IBOutlet weak var phone: UITextField!
+    @IBOutlet weak var securityCode: UITextField!
+    @IBOutlet weak var userName: UITextField!
+    
+    @IBOutlet weak var passcode: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sendSecurityCodeBtn.setTitle("  获取验证码", for: .normal)
+        sendSecurityCodeBtn.isEnabled = false
+        self.navigationItem.leftItemsSupplementBackButton = true
+        phone.delegate = self
+        alertLabel.isHidden = true
 
+        
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -22,6 +112,25 @@ class RegisterController: UIViewController {
     }
     
 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text
+            else {
+                return true
+        }
+        let newLength = text.characters.count + string.characters.count - range.length
+        if newLength >= 11 {
+//            goBtn.setImage(#imageLiteral(resourceName: "nextArrow_enable"), for: .normal)
+//            goBtn.backgroundColor = UIColor.ofo
+//            goBtn.isEnabled = true
+              sendSecurityCodeBtn.isEnabled = true
+        } else {
+//            goBtn.setImage(#imageLiteral(resourceName: "nextArrow_unenable"), for: .normal)
+//            goBtn.backgroundColor = UIColor.groupTableViewBackground
+//            goBtn.isEnabled = false
+             sendSecurityCodeBtn.isEnabled = false
+        }
+        return newLength <= 11
+    }
     /*
     // MARK: - Navigation
 
