@@ -11,4 +11,11 @@
 * 目前仅支持ios 9，10机型，UI支持iPhone 6，6S，7，7S，其余机型autolayout可能会出错
 ----------
 ## 项目截图
+![Image text](https://github.com/hjackguo/Picture/blob/master/login.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/rigister.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/swearView.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/map.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/route.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/unlock.png)<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/parking.png)<br>
 
