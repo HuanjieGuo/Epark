@@ -12,6 +12,7 @@
 		CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */; };
 		CF0DD9EB1FA0224E002AFA4F /* BookCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */; };
 		CF0DD9EC1FA0224E002AFA4F /* BookCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */; };
+		CF0DD9EE1FA0B84F002AFA4F /* BookInfomationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */; };
 		CF0E9F481F39884D00442D2F /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0E9F471F39884D00442D2F /* NetworkHelper.swift */; };
 		CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F52681F17695000DAEB89 /* MenuController.swift */; };
 		CF1234CE1F36D4A200597CC8 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */; };
@@ -67,6 +68,7 @@
 		CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellTableViewCell.swift; sourceTree = "<group>"; };
 		CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCellTableViewCell.xib; sourceTree = "<group>"; };
+		CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfomationController.swift; sourceTree = "<group>"; };
 		CF0E9F471F39884D00442D2F /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		CF0F52681F17695000DAEB89 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */,
 				CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */,
 				CF42A0041F4C1656004EC89B /* revealViewController.swift */,
+				CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */,
 				CFF349501EF3CFCB008F65EA /* ViewController.swift */,
 				CF9577251F529D8C004F40DD /* passValue.swift */,
 				CF1494B51F33177800417FC7 /* CodeScan.bundle */,
@@ -461,6 +464,7 @@
 				CF1494B41F31E51F00417FC7 /* ScanController.swift in Sources */,
 				CFF349801EF3E094008F65EA /* webViewController.swift in Sources */,
 				CF9577261F529D8C004F40DD /* passValue.swift in Sources */,
+				CF0DD9EE1FA0B84F002AFA4F /* BookInfomationController.swift in Sources */,
 				CF42A0031F4B140B004EC89B /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

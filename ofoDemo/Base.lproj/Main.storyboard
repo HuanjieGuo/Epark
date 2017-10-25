@@ -143,6 +143,9 @@
                                                 <constraint firstItem="qzF-Vf-6r4" firstAttribute="leading" secondItem="QD2-97-ak2" secondAttribute="leading" constant="30" id="WBm-Si-21K"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BN9-t5-b5s" kind="presentation" id="luF-ed-JdH"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i81-HF-6Ag">
                                         <rect key="frame" x="0.0" y="194" width="375" height="44"/>
@@ -435,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNg-E6-OqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278" y="-1382"/>
+            <point key="canvasLocation" x="3087.1999999999998" y="-1409.1454272863568"/>
         </scene>
         <!--My Parking Info Controller-->
         <scene sceneID="7eA-V8-MhI">
@@ -1390,7 +1393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yib-wx-IpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="-855"/>
+            <point key="canvasLocation" x="2111.1999999999998" y="-855.47226386806608"/>
         </scene>
         <!--车位开锁-->
         <scene sceneID="1HP-wL-Duh">
@@ -1911,7 +1914,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptw-SS-74J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="-1409"/>
+            <point key="canvasLocation" x="2178.4000000000001" y="-1409.1454272863568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YOt-Wq-hWk">
@@ -1948,6 +1951,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSS-t4-qbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2018" y="1321"/>
+        </scene>
+        <!--Book Infomation Controller-->
+        <scene sceneID="07x-s8-oKW">
+            <objects>
+                <viewController id="9NR-jy-nVT" customClass="BookInfomationController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oQ1-Ng-Zd2"/>
+                        <viewControllerLayoutGuide type="bottom" id="uT2-pG-HXh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qHE-KI-bj9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S5G-o2-jto">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc7-XA-F9t" customClass="MyProviewButton" customModule="ofoDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="所有订单">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="allBookBtnTap:" destination="9NR-jy-nVT" eventType="touchUpInside" id="87O-my-bcv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H18-kz-w9f" customClass="MyProviewButton" customModule="ofoDemo" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="未完成">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="unfinishBookBtnTap:" destination="9NR-jy-nVT" eventType="touchUpInside" id="noT-St-fVF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2D-gi-p8y" customClass="MyProviewButton" customModule="ofoDemo" customModuleProvider="target">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="已完成">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="finishBookBtnTap:" destination="9NR-jy-nVT" eventType="touchUpInside" id="NZ2-qg-Lco"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kvr-r8-Tul"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1sB-bw-sze">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S5G-o2-jto" firstAttribute="leading" secondItem="qHE-KI-bj9" secondAttribute="leading" id="0xM-cw-Zch"/>
+                            <constraint firstItem="S5G-o2-jto" firstAttribute="top" secondItem="oQ1-Ng-Zd2" secondAttribute="bottom" id="1mU-pH-j4D"/>
+                            <constraint firstItem="1sB-bw-sze" firstAttribute="top" secondItem="S5G-o2-jto" secondAttribute="bottom" id="Akg-jL-TtM"/>
+                            <constraint firstAttribute="trailing" secondItem="S5G-o2-jto" secondAttribute="trailing" id="ChE-Ll-UK1"/>
+                            <constraint firstItem="uT2-pG-HXh" firstAttribute="top" secondItem="1sB-bw-sze" secondAttribute="bottom" id="EEI-cb-PdW"/>
+                            <constraint firstAttribute="trailing" secondItem="1sB-bw-sze" secondAttribute="trailing" id="lHG-Yq-3qE"/>
+                            <constraint firstItem="1sB-bw-sze" firstAttribute="leading" secondItem="qHE-KI-bj9" secondAttribute="leading" id="vXb-rg-HBW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gOx-Af-yj7">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="JOK-aj-dfp">
+                            <connections>
+                                <action selector="backBtn:" destination="9NR-jy-nVT" id="SYz-RU-qEg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="allBookBtn" destination="Tc7-XA-F9t" id="kxT-RB-dlr"/>
+                        <outlet property="bookTableView" destination="1sB-bw-sze" id="l98-Ek-nn8"/>
+                        <outlet property="finishBookBtn" destination="B2D-gi-p8y" id="pV6-4e-pxW"/>
+                        <outlet property="unfinishBookBtn" destination="H18-kz-w9f" id="tF9-sL-NwQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Lj-9wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="-1133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S5o-S1-1gc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BN9-t5-b5s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a0Z-9X-nJu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9NR-jy-nVT" kind="relationship" relationship="rootViewController" id="nar-H8-I6e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktb-iB-Zn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.200000000000003" y="-1132.5337331334333"/>
         </scene>
     </scenes>
     <resources>
