@@ -8,7 +8,17 @@
 
 import UIKit
 
-class BookInfomationController: UIViewController {
+class BookInfomationController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell:UITableViewCell = UITableViewCell()
+        print(indexPath)
+        return cell
+    }
+    
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true)
     }
@@ -43,11 +53,22 @@ class BookInfomationController: UIViewController {
     }
     @IBOutlet weak var bookTableView: UITableView!
     
+    var bookInformation = [[String:Any]]()
+    var base1:baseClass = baseClass()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "我的订单"
+        bookTableView.delegate = self
+        bookTableView.dataSource = self
+        bookTableView.separatorStyle = .none
+        
+         bookInformation = base1.cacheGetDic(key: "bookInfo")
+     
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

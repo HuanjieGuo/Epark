@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
+import SwiftHTTP
 
 class MenuController: UITableViewController {
 
     @IBOutlet weak var certImageView: UIImageView!
     @IBOutlet weak var certLabel: UILabel!
+    @IBOutlet weak var myBookInfoCell: UITableViewCell!
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var avatar: UIImageView!         //头像
     @IBOutlet weak var creditLabel: UILabel!
@@ -20,6 +23,8 @@ class MenuController: UITableViewController {
     var token = ""
     var userPhoto = ""
     var userNickname = ""
+    var bookInformation = [[String:Any]]()
+    var base1:baseClass = baseClass()
     
 
     
@@ -37,13 +42,49 @@ class MenuController: UITableViewController {
     
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-
-        if !token.isEmpty{
-            
     
+    
+    func loadSource(_ sender:UITableViewCell) {
+        do{
+            let opt = try HTTP.GET("http://139.196.72.74/api/v1/front/order",headers: ["authorization":token])
+            opt.start{response in
+                if let err = response.error{
+                    print("error:\(err.localizedDescription)")
+                    return
+                }
+                if response.statusCode == 200{
+                    self.bookInformation = JSON(response.data)["result"].arrayObject as! [[String : Any]]
+                    print("成功赋值字典\n\(self.bookInformation[1])")
+                    self.base1.cacheSetDic(key: "bookInfo", value: self.bookInformation)
+
+                    self.performSegue(withIdentifier: "myBookInfo", sender: self)
+                    
+                    
+                    
+                }
+                if response.statusCode == 401{
+                    print("token错误")
+                }
+            }
+
+
+        }catch let error{
+            print("请求失败:\(error)")
+        }
+
+        
+//        performSegue(withIdentifier: "myBookInfo", sender: self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //为cell加动作
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(loadSource(_:)))
+        myBookInfoCell.isUserInteractionEnabled = true
+        myBookInfoCell.addGestureRecognizer(tapGR)
+        
+        if !token.isEmpty{
             nicknameLabel.text = userNickname
      
             let url = URL(string: userPhoto)
@@ -135,12 +176,13 @@ class MenuController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-
-
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//
+//
+//
+//    }
  
 
 }

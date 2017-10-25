@@ -144,7 +144,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BN9-t5-b5s" kind="presentation" id="luF-ed-JdH"/>
+                                            <segue destination="BN9-t5-b5s" kind="presentation" identifier="myBookInfo" id="QFp-EW-ArN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i81-HF-6Ag">
@@ -317,6 +317,7 @@
                         <outlet property="certImageView" destination="cop-KO-ETs" id="tZn-vX-uI5"/>
                         <outlet property="certLabel" destination="1le-YC-9kg" id="tO8-NE-Rwg"/>
                         <outlet property="creditLabel" destination="XB5-ct-SjL" id="N2t-Ks-GxA"/>
+                        <outlet property="myBookInfoCell" destination="F76-Vc-xGO" id="h1F-gh-aR8"/>
                         <outlet property="nicknameLabel" destination="kUw-GD-ukx" id="x7B-zC-rpX"/>
                     </connections>
                 </tableViewController>

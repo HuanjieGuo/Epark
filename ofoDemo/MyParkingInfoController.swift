@@ -30,6 +30,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         super.viewDidLoad()
 //        FTIndicator.showProgressWithmessage("Please waiting ...")
         self.title = "我的车位"
+        tableView?.separatorStyle = .none
                myParkPlace = baseInfo.cacheGetDic(key: "info")
         baseInfo2.cacheSetDic(key: "info2", value: self.myParkPlace)
         print(myParkPlace.count)
@@ -42,7 +43,6 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
 
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
-        self.tableView!.allowsSelection = false
  
         tableView?.allowsSelection = true
 
