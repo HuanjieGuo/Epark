@@ -129,7 +129,7 @@
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage_MyStroke" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-Ol-PoT">
                                                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的行程" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-it-3NE">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-it-3NE">
                                                             <rect key="frame" x="25" y="0.0" width="49.5" height="20"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                             <nil key="textColor"/>
@@ -891,15 +891,9 @@
                             <constraint firstItem="N7E-Av-36n" firstAttribute="centerY" secondItem="3r9-cX-4pj" secondAttribute="centerY" id="xTu-EF-f4m"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornorRadius">
-                                <real key="value" value="4"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" red="1" green="0.94250896910000004" blue="0.43291984389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                <real key="value" value="3"/>
-                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="nil" keyPath="cornorRadius"/>
+                            <userDefinedRuntimeAttribute type="nil" keyPath="borderColor"/>
+                            <userDefinedRuntimeAttribute type="nil" keyPath="borderWidth"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="用户注册" id="gXo-Uo-41W">
@@ -1143,7 +1137,7 @@
                                 <rect key="frame" x="8" y="60" width="359" height="267"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-Y6-iZY">
-                                        <rect key="frame" x="70" y="180" width="219" height="45"/>
+                                        <rect key="frame" x="70" y="179.5" width="219" height="45"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入车位号" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCN-Ua-EDM" customClass="MyProviewText" customModule="ofoDemo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="193" height="45"/>
@@ -1176,13 +1170,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入车位号，获取解锁码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Reo-QP-KOy">
-                                        <rect key="frame" x="70" y="245" width="219" height="19.5"/>
+                                        <rect key="frame" x="70" y="244.5" width="219" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPackerGuideYellow" translatesAutoresizingMaskIntoConstraints="NO" id="w8p-hV-3yg">
-                                        <rect key="frame" x="10" y="0.0" width="339" height="174"/>
+                                        <rect key="frame" x="10" y="0.0" width="339" height="173.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1291,7 +1285,7 @@
                                 <rect key="frame" x="37" y="160" width="301" height="333.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-qd-U1G" customClass="MyProviewButton" customModule="ofoDemo" customModuleProvider="target">
-                                        <rect key="frame" x="128" y="284" width="44" height="44"/>
+                                        <rect key="frame" x="128" y="283.5" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="20i-DH-32q"/>
                                             <constraint firstAttribute="height" constant="44" id="Kgt-zI-tei"/>
@@ -1314,7 +1308,7 @@
                                         </connections>
                                     </button>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeb-cn-e0p" customClass="MyProviewContainer" customModule="ofoDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3" width="301" height="267"/>
+                                        <rect key="frame" x="0.0" y="3" width="301" height="266.5"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="3"/>
@@ -1465,7 +1459,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPackerGuideYellow" translatesAutoresizingMaskIntoConstraints="NO" id="pym-cg-bJq">
-                                        <rect key="frame" x="10" y="8" width="339" height="216.5"/>
+                                        <rect key="frame" x="10" y="8" width="339" height="216"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1713,7 +1707,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPackerGuideYellow" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-Yq-jkI">
-                                        <rect key="frame" x="12" y="8" width="339" height="161"/>
+                                        <rect key="frame" x="12" y="8" width="339" height="161.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1780,11 +1774,11 @@
                         <viewControllerLayoutGuide type="bottom" id="KJh-dd-hAx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yui-ce-R3P">
-                        <rect key="frame" x="0.0" y="0.0" width="301" height="267"/>
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="266.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flD-2O-tEe">
-                                <rect key="frame" x="20" y="50" width="161.5" height="168"/>
+                                <rect key="frame" x="20" y="49.5" width="161.5" height="168"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HNT-du-FkA">
                                         <rect key="frame" x="0.0" y="0.0" width="91.5" height="168"/>
