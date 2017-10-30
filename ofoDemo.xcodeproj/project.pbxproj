@@ -11,7 +11,6 @@
 		CF0109AE1F5FA2BD00E15A3C /* MyParkingInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */; };
 		CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */; };
 		CF0DD9EB1FA0224E002AFA4F /* BookCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */; };
-		CF0DD9EC1FA0224E002AFA4F /* BookCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */; };
 		CF0DD9EE1FA0B84F002AFA4F /* BookInfomationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */; };
 		CF0E9F481F39884D00442D2F /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0E9F471F39884D00442D2F /* NetworkHelper.swift */; };
 		CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F52681F17695000DAEB89 /* MenuController.swift */; };
@@ -24,6 +23,8 @@
 		CF2A97011F374CA000AF0D8A /* UnlockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A97001F374CA000AF0D8A /* UnlockController.swift */; };
 		CF42A0031F4B140B004EC89B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42A0021F4B140B004EC89B /* LoginController.swift */; };
 		CF42A0051F4C1656004EC89B /* revealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42A0041F4C1656004EC89B /* revealViewController.swift */; };
+		CF694F411FA752C300FCFC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF349521EF3CFCB008F65EA /* Main.storyboard */; };
+		CF694F461FA7576F00FCFC17 /* BookCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF694F451FA7539600FCFC17 /* BookCellTableViewCell.xib */; };
 		CF7EB2211F3826A80049FE23 /* 已开锁.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21D1F3826A80049FE23 /* 已开锁.mp3 */; };
 		CF7EB2221F3826A80049FE23 /* 按开锁按钮进行停车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21E1F3826A80049FE23 /* 按开锁按钮进行停车.mp3 */; };
 		CF7EB2231F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21F1F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 */; };
@@ -35,7 +36,6 @@
 		CFE4C42B1F7BD93F00D34E2E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */; };
 		CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */; };
 		CFF349511EF3CFCB008F65EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF349501EF3CFCB008F65EA /* ViewController.swift */; };
-		CFF349541EF3CFCB008F65EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF349521EF3CFCB008F65EA /* Main.storyboard */; };
 		CFF349561EF3CFCB008F65EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF349551EF3CFCB008F65EA /* Assets.xcassets */; };
 		CFF349591EF3CFCB008F65EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF349571EF3CFCB008F65EA /* LaunchScreen.storyboard */; };
 		CFF349641EF3CFCB008F65EA /* ofoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF349631EF3CFCB008F65EA /* ofoDemoTests.swift */; };
@@ -67,7 +67,6 @@
 		CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyParkingInfoController.swift; sourceTree = "<group>"; };
 		CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableCell.swift; sourceTree = "<group>"; };
 		CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellTableViewCell.swift; sourceTree = "<group>"; };
-		CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCellTableViewCell.xib; sourceTree = "<group>"; };
 		CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfomationController.swift; sourceTree = "<group>"; };
 		CF0E9F471F39884D00442D2F /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		CF0F52681F17695000DAEB89 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -80,6 +79,8 @@
 		CF2A97001F374CA000AF0D8A /* UnlockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockController.swift; sourceTree = "<group>"; };
 		CF42A0021F4B140B004EC89B /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CF42A0041F4C1656004EC89B /* revealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = revealViewController.swift; sourceTree = "<group>"; };
+		CF694F441FA7539600FCFC17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookCellTableViewCell.xib; sourceTree = "<group>"; };
+		CF694F481FA757EB00FCFC17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BookCellTableViewCell.strings; sourceTree = "<group>"; };
 		CF7EB21D1F3826A80049FE23 /* 已开锁.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "已开锁.mp3"; sourceTree = "<group>"; };
 		CF7EB21E1F3826A80049FE23 /* 按开锁按钮进行停车.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "按开锁按钮进行停车.mp3"; sourceTree = "<group>"; };
 		CF7EB21F1F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "请将车辆移开车位后结束停车.mp3"; sourceTree = "<group>"; };
@@ -143,6 +144,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF694F3F1FA6B93B00FCFC17 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CFC685101F35731100BE11AE /* ColorHelper.swift */,
+				CF1494B31F31E51F00417FC7 /* ScanController.swift */,
+				CF1494B51F33177800417FC7 /* CodeScan.bundle */,
+				CF26695A1F264777000EA704 /* MyPinAnnotation.swift */,
+				CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */,
+				CF0E9F471F39884D00442D2F /* NetworkHelper.swift */,
+				CF9577251F529D8C004F40DD /* passValue.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CF694F401FA6BACA00FCFC17 /* BookInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */,
+				CF694F451FA7539600FCFC17 /* BookCellTableViewCell.xib */,
+				CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */,
+			);
+			path = BookInfo;
+			sourceTree = "<group>";
+		};
 		CF7EB21C1F3826A80049FE23 /* voice */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,16 +205,12 @@
 		CFF3494D1EF3CFCB008F65EA /* ofoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF694F3F1FA6B93B00FCFC17 /* Helper */,
 				CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */,
+				CF694F401FA6BACA00FCFC17 /* BookInfo */,
 				CFF3497F1EF3E094008F65EA /* webViewController.swift */,
-				CF0DD9E91FA0224E002AFA4F /* BookCellTableViewCell.swift */,
-				CF0DD9EA1FA0224E002AFA4F /* BookCellTableViewCell.xib */,
 				CF42A0041F4C1656004EC89B /* revealViewController.swift */,
-				CF0DD9ED1FA0B84F002AFA4F /* BookInfomationController.swift */,
 				CFF349501EF3CFCB008F65EA /* ViewController.swift */,
-				CF9577251F529D8C004F40DD /* passValue.swift */,
-				CF1494B51F33177800417FC7 /* CodeScan.bundle */,
-				CF26695A1F264777000EA704 /* MyPinAnnotation.swift */,
 				CF2A97001F374CA000AF0D8A /* UnlockController.swift */,
 				CF1234CF1F36E3FB00597CC8 /* PakingController.swift */,
 				CF0109B01F5FB6A000E15A3C /* MyTableCell.swift */,
@@ -198,14 +219,10 @@
 				CFF349521EF3CFCB008F65EA /* Main.storyboard */,
 				CF42A0021F4B140B004EC89B /* LoginController.swift */,
 				CF0109AD1F5FA2BD00E15A3C /* MyParkingInfoController.swift */,
-				CFC685101F35731100BE11AE /* ColorHelper.swift */,
 				CF2375431F924B2000DC4291 /* RigisterSucceedController.swift */,
-				CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */,
 				CF0F52681F17695000DAEB89 /* MenuController.swift */,
 				CFC6850E1F356F6E00BE11AE /* InputController.swift */,
 				CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */,
-				CF0E9F471F39884D00442D2F /* NetworkHelper.swift */,
-				CF1494B31F31E51F00417FC7 /* ScanController.swift */,
 				CF7EB21C1F3826A80049FE23 /* voice */,
 				CFF349551EF3CFCB008F65EA /* Assets.xcassets */,
 				CFF349571EF3CFCB008F65EA /* LaunchScreen.storyboard */,
@@ -362,14 +379,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF694F461FA7576F00FCFC17 /* BookCellTableViewCell.xib in Resources */,
 				CFF349591EF3CFCB008F65EA /* LaunchScreen.storyboard in Resources */,
 				CF7EB2241F3826A80049FE23 /* 请输入车位号.mp3 in Resources */,
-				CF0DD9EC1FA0224E002AFA4F /* BookCellTableViewCell.xib in Resources */,
 				CF7EB2211F3826A80049FE23 /* 已开锁.mp3 in Resources */,
 				CFF349561EF3CFCB008F65EA /* Assets.xcassets in Resources */,
 				CF7EB2221F3826A80049FE23 /* 按开锁按钮进行停车.mp3 in Resources */,
+				CF694F411FA752C300FCFC17 /* Main.storyboard in Resources */,
 				CF7EB2231F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 in Resources */,
-				CFF349541EF3CFCB008F65EA /* Main.storyboard in Resources */,
 				CF1494B61F33177800417FC7 /* CodeScan.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +518,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF694F451FA7539600FCFC17 /* BookCellTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF694F441FA7539600FCFC17 /* Base */,
+				CF694F481FA757EB00FCFC17 /* en */,
+			);
+			name = BookCellTableViewCell.xib;
+			sourceTree = "<group>";
+		};
 		CFF349521EF3CFCB008F65EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -137,7 +137,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-lc-wC3">
-                        <rect key="frame" x="72.5" y="0.0" width="1" height="128"/>
+                        <rect key="frame" x="72.5" y="2" width="1" height="124.5"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="QA2-Yu-RBL"/>
@@ -148,14 +148,16 @@
                     <constraint firstItem="Rf0-lc-wC3" firstAttribute="leading" secondItem="hNj-MS-OLz" secondAttribute="trailing" constant="10" id="CI2-FA-z0H"/>
                     <constraint firstItem="Rf0-lc-wC3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LiS-XJ-N6S"/>
                     <constraint firstItem="3Dq-YT-eRP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mqk-J6-bbv"/>
-                    <constraint firstAttribute="bottom" secondItem="Rf0-lc-wC3" secondAttribute="bottom" id="PkZ-YP-Eo3"/>
                     <constraint firstItem="3Dq-YT-eRP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="bPD-JG-zU7"/>
                     <constraint firstAttribute="trailingMargin" secondItem="A4q-Hv-ekF" secondAttribute="trailing" id="qh2-mF-dQk"/>
                     <constraint firstAttribute="bottomMargin" secondItem="A4q-Hv-ekF" secondAttribute="bottom" id="rIe-i9-nuq"/>
                     <constraint firstItem="m81-0q-7CV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="szu-7C-hw8"/>
+                    <constraint firstItem="Rf0-lc-wC3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="to6-3g-4kd"/>
                     <constraint firstItem="m81-0q-7CV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vjX-oM-Mau"/>
+                    <constraint firstAttribute="bottom" secondItem="Rf0-lc-wC3" secondAttribute="bottom" constant="2" id="xVN-f5-mAa"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="BookCellTableViewCell"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bookOperationView" destination="A4q-Hv-ekF" id="KIB-9C-3ED"/>

@@ -9,15 +9,7 @@
 import UIKit
 
 class BookInfomationController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = UITableViewCell()
-        print(indexPath)
-        return cell
-    }
+
     
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true)
@@ -62,9 +54,13 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         self.title = "我的订单"
         bookTableView.delegate = self
         bookTableView.dataSource = self
-        bookTableView.separatorStyle = .none
+        bookTableView.separatorStyle = .singleLine
         
          bookInformation = base1.cacheGetDic(key: "bookInfo")
+        
+        let cellNib = UINib(nibName:"BookCellTableViewCell",bundle:nil)
+        bookTableView.register(cellNib, forCellReuseIdentifier: "bookCell")
+        print("赋值成功：\n\(bookInformation[1])")
      
         // Do any additional setup after loading the view.
     }
@@ -73,6 +69,18 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return bookInformation.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:BookCellTableViewCell = self.bookTableView.dequeueReusableCell(withIdentifier: "bookCell") as! BookCellTableViewCell
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
 
