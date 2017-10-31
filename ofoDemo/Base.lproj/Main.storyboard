@@ -2041,7 +2041,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gOx-Af-yj7">
-                        <barButtonItem key="leftBarButtonItem" title="返回" id="JOK-aj-dfp">
+                        <barButtonItem key="leftBarButtonItem" title="返回" image="backIndicator" id="JOK-aj-dfp">
                             <connections>
                                 <action selector="backBtn:" destination="9NR-jy-nVT" id="SYz-RU-qEg"/>
                             </connections>

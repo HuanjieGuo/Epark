@@ -37,9 +37,11 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="待付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sU-1j-jht">
-                        <rect key="frame" x="293" y="8" width="48" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sU-1j-jht">
+                        <rect key="frame" x="296" y="8" width="45" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="dEO-bL-kAP"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="1" green="0.16362138449999999" blue="0.1552383246" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -74,7 +76,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
-                            <action selector="bookOperation:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AFS-rx-ebP"/>
+                            <action selector="bookBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rSn-sM-tVi"/>
                         </connections>
                     </button>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3Dq-YT-eRP">
@@ -138,7 +140,7 @@
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rf0-lc-wC3">
                         <rect key="frame" x="72.5" y="2" width="1" height="124.5"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="QA2-Yu-RBL"/>
                         </constraints>
@@ -148,11 +150,14 @@
                     <constraint firstItem="Rf0-lc-wC3" firstAttribute="leading" secondItem="hNj-MS-OLz" secondAttribute="trailing" constant="10" id="CI2-FA-z0H"/>
                     <constraint firstItem="Rf0-lc-wC3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LiS-XJ-N6S"/>
                     <constraint firstItem="3Dq-YT-eRP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mqk-J6-bbv"/>
+                    <constraint firstItem="9sU-1j-jht" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="WUD-rh-xfq"/>
                     <constraint firstItem="3Dq-YT-eRP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="bPD-JG-zU7"/>
+                    <constraint firstItem="9sU-1j-jht" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ofQ-Nc-k1B"/>
                     <constraint firstAttribute="trailingMargin" secondItem="A4q-Hv-ekF" secondAttribute="trailing" id="qh2-mF-dQk"/>
                     <constraint firstAttribute="bottomMargin" secondItem="A4q-Hv-ekF" secondAttribute="bottom" id="rIe-i9-nuq"/>
                     <constraint firstItem="m81-0q-7CV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="szu-7C-hw8"/>
                     <constraint firstItem="Rf0-lc-wC3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="to6-3g-4kd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="A4q-Hv-ekF" secondAttribute="bottom" id="vM8-O2-bTn"/>
                     <constraint firstItem="m81-0q-7CV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vjX-oM-Mau"/>
                     <constraint firstAttribute="bottom" secondItem="Rf0-lc-wC3" secondAttribute="bottom" constant="2" id="xVN-f5-mAa"/>
                 </constraints>
@@ -160,13 +165,13 @@
             <accessibility key="accessibilityConfiguration" identifier="BookCellTableViewCell"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bookOperationView" destination="A4q-Hv-ekF" id="KIB-9C-3ED"/>
+                <outlet property="bookBtn" destination="A4q-Hv-ekF" id="ah9-GE-8c6"/>
                 <outlet property="bookStatus" destination="9sU-1j-jht" id="c29-20-b6g"/>
                 <outlet property="parkDuringTime" destination="ex0-Ea-6Fy" id="RxW-W6-WJ8"/>
                 <outlet property="parkLocation" destination="6Cw-Qf-ZIq" id="8VE-Vg-ibN"/>
                 <outlet property="parkMoney" destination="mzb-YP-EPv" id="5uW-2t-ngz"/>
                 <outlet property="startDate" destination="f7a-UQ-dUy" id="FXp-Mq-nZK"/>
-                <outlet property="startTime" destination="f7a-UQ-dUy" id="zH2-jG-GDP"/>
+                <outlet property="startTime" destination="hNj-MS-OLz" id="Ljb-6b-4zm"/>
             </connections>
             <point key="canvasLocation" x="48.5" y="162.5"/>
         </tableViewCell>

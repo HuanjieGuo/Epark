@@ -55,12 +55,18 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         bookTableView.delegate = self
         bookTableView.dataSource = self
         bookTableView.separatorStyle = .singleLine
+        bookTableView.allowsSelection = true
+        
         
          bookInformation = base1.cacheGetDic(key: "bookInfo")
         
         let cellNib = UINib(nibName:"BookCellTableViewCell",bundle:nil)
         bookTableView.register(cellNib, forCellReuseIdentifier: "bookCell")
         print("赋值成功：\n\(bookInformation[1])")
+        
+        
+        
+        
      
         // Do any additional setup after loading the view.
     }
@@ -77,12 +83,61 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:BookCellTableViewCell = self.bookTableView.dequeueReusableCell(withIdentifier: "bookCell") as! BookCellTableViewCell
+        let nowBookInformation = bookInformation[indexPath.row]
+        
+        //time
+        let startTime = nowBookInformation["start_time"]
+        let startTime_Date_Year = (startTime as! NSString).substring(to: 4)
+        let startTime_Date_Month = (startTime as! NSString).substring(with: NSMakeRange(5, 2))
+        let startTime_Date_Day = (startTime as! NSString).substring(with: NSMakeRange(8, 2))
+        let startTime_Time = (startTime as! NSString).substring(with: NSMakeRange(11, 5))
+        print("\n"+startTime_Date_Year+" "+startTime_Date_Month+" "+startTime_Date_Day+" "+startTime_Time)
+        cell.startTime.text = startTime_Time
+        cell.startDate.text = startTime_Date_Month+"月"+startTime_Date_Day+"日"
+        
+        //status and button setting
+        cell.bookStatus.text = nowBookInformation["status_name"] as? String
+        switch nowBookInformation["status_name"] as? String {
+        case "待付费"?:
+            cell.bookStatus.textColor = .red
+            
+            
+        case "已创建"?:
+            cell.bookStatus.textColor = .green
+            cell.bookBtn.setTitle("结束停车", for: .normal)
+            cell.bookBtn.backgroundColor = .orange
+        default:
+            cell.bookStatus.textColor = .black
+        }
+        
+        //price
+        cell.parkMoney.text = nowBookInformation["price"] as? String
+        
+        //location
+        
+        let region_name:String = (nowBookInformation["region_name"] as? String)!
+        let place_name:String = (nowBookInformation["place_name"] as? String)!
+        cell.parkLocation.text = region_name+place_name
+        
+        //按钮
+        
+        
+        
+        
+        
+        
+        
+        
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        bookTableView.deselectRow(at: indexPath, animated: true)
+    }
 
     /*
     // MARK: - Navigation

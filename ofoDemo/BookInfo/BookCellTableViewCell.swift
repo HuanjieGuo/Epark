@@ -10,15 +10,17 @@ import UIKit
 
 class BookCellTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var bookOperationView: MyProviewButton!
     @IBOutlet weak var parkLocation: UILabel!
 
     @IBOutlet weak var parkMoney: UILabel!
     @IBOutlet weak var parkDuringTime: UILabel!
-    @IBAction func bookOperation(_ sender: Any) {
+
+    @IBOutlet weak var bookBtn: UIButton!
+    @IBAction func bookBtnTap(_ sender: Any) {
     }
     @IBOutlet weak var bookStatus: UILabel!
     @IBOutlet weak var startDate: UILabel!
+   
     @IBOutlet weak var startTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
