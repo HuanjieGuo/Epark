@@ -100,12 +100,16 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         switch nowBookInformation["status_name"] as? String {
         case "待付费"?:
             cell.bookStatus.textColor = .red
+            cell.bookBtn.borderColor = .green
+            cell.bookBtn.setTitle("支付", for: .normal)
+            cell.bookBtn.setTitleColor(.green, for: .normal)
             
             
         case "已创建"?:
-            cell.bookStatus.textColor = .green
+            cell.bookStatus.textColor = UIColor.darkGray
             cell.bookBtn.setTitle("结束停车", for: .normal)
-            cell.bookBtn.backgroundColor = .orange
+            cell.bookBtn.borderColor = .orange
+            cell.bookBtn.setTitleColor(.orange, for: .normal)
         default:
             cell.bookStatus.textColor = .black
         }
