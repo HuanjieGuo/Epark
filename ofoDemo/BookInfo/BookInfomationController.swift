@@ -57,6 +57,9 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         bookTableView.separatorStyle = .singleLine
         bookTableView.allowsSelection = true
         
+        allBookBtn.borderColor = UIColor.orange
+        allBookBtn.setTitleColor(UIColor.orange, for: .normal)
+        
         
          bookInformation = base1.cacheGetDic(key: "bookInfo")
         
@@ -123,7 +126,18 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         let place_name:String = (nowBookInformation["place_name"] as? String)!
         cell.parkLocation.text = region_name+place_name
         
-        //按钮
+        //until time
+        let timeUnit = nowBookInformation["timeunit"] as? Double
+        print(timeUnit)
+
+        
+         if(timeUnit == nil){
+            cell.parkDuringTime.text = "None"
+        }
+        else{
+            let parkTime = timeUnit!
+                   cell.parkDuringTime.text = String(Int(parkTime/1))+"小时"+String(Int((parkTime-Double(Int(parkTime/1)))*60)+1)+"分钟"
+        }
         
         
         
