@@ -8,14 +8,21 @@
 >* 导航停车<br>
 ----------
 ## 提示
-* 目前仅支持ios 9，10机型，UI支持iPhone 6，6S，7，7S，其余机型autolayout可能会出错
+* 最新更新优化了autolayout,适用与各款机型及ipad
 ----------
-## 项目截图
-![Image text](https://github.com/hjackguo/Picture/blob/master/login.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/rigister.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/swearView.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/map.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/route.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/unlock.png)<br>
-![Image text](https://github.com/hjackguo/Picture/blob/master/parking.png)<br>
+## 项目截图<br>
+#### 登录界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/login.png)<br><br><br>
+#### 注册界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/rigister.png)<br><br><br>
+#### 菜单界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/swearView.png)<br><br><br>
+#### 首页界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/map.png)<br><br><br>
+#### 规划路径界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/route.png)<br><br><br>
+#### 解锁界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/unlock.png)<br><br><br>
+#### 停车界面<br>
+![Image text](https://github.com/hjackguo/Picture/blob/master/parking.png)<br><br><br>
 
