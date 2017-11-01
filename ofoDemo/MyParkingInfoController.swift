@@ -45,6 +45,7 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         self.tableView!.dataSource = self
  
         tableView?.allowsSelection = true
+        tableView?.separatorStyle = .none
 
         self.tableView!.register(MyTableCell.self, forCellReuseIdentifier: "tableCell")
     
@@ -98,7 +99,9 @@ class MyParkingInfoController: UIViewController,UITableViewDelegate,UITableViewD
         return cell
    
     }
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

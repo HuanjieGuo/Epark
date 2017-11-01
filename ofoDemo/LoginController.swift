@@ -14,9 +14,7 @@ import SDCAlertView
 class LoginController: UIViewController {
     
 
-    @IBOutlet weak var loginBtnView: UIButton!
-    
-    @IBOutlet weak var registerBtnView: UIButton!
+   
     var base: baseClass = baseClass()
     @IBAction func loginBtn(_ sender: UIButton) {
         checkUserInformation()
@@ -30,9 +28,6 @@ class LoginController: UIViewController {
         super.viewDidLoad()
         userNameField.adjustsFontSizeToFitWidth = true
         userPasscodeField.adjustsFontSizeToFitWidth = true
-        loginBtnView.titleLabel?.adjustsFontSizeToFitWidth = true 
-        registerBtnView.titleLabel?.adjustsFontSizeToFitWidth = true
-        
         
         // Do any additional setup after loading the view.
     }

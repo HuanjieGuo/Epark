@@ -81,14 +81,14 @@ class PakingController: UIViewController {
     }
 
     @IBAction func endParkingTap(_ sender: Any) {
-        let alert = AlertController(title: "结束停车", message: "本次停车费\(String(format:"%.2f",self.pakingMoneyNow))元将自动从我的钱包里面扣除，请先将车移开车位后按确认支付，结束本次停车", preferredStyle: .alert)
+        let alert = AlertController(title: "结束停车", message: "请先将车移开车位后按确认支付，再结束本次停车", preferredStyle: .alert)
         alert.add(AlertAction(title: "继续停车", style: .normal))
-        alert.add(AlertAction(title: "确认支付", style: .preferred, handler: { (turnBtn) in
+        alert.add(AlertAction(title: "结束停车", style: .preferred, handler: { (turnBtn) in
 
         self.seuge()
             FTIndicator.setIndicatorStyle(.light)
             
-            FTIndicator.showNotification(with: #imageLiteral(resourceName: "UnlockSucess"), title: "成功支付", message: "已成功从您的钱包里扣除本次停车费\(String(format:"%.2f",self.pakingMoneyNow))元")
+            FTIndicator.showNotification(with: #imageLiteral(resourceName: "UnlockSucess"), title: "成功结束停车", message: "请您对本次停车的费用进行支付")
             
             
         }))

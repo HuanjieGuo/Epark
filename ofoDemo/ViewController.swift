@@ -240,7 +240,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
         //rea
          let revealVC = revealViewController()!
-            revealVC.rearViewRevealWidth = 280
+            revealVC.rearViewRevealWidth = self.view.bounds.width/3*2
         
         
             navigationItem.leftBarButtonItem?.target = revealVC
@@ -259,11 +259,11 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     // MARK: - 大头针动画
     func pinAnimation() {
         //坠落效果，y轴加位移
-        let endFrame = pinView.frame
-        pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: {
-            self.pinView.frame = endFrame
-        }, completion: nil)
+//        let endFrame = pinView.frame
+//        pinView.frame = endFrame.offsetBy(dx: 0, dy: -15)
+//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: {
+//            self.pinView.frame = endFrame
+//        }, completion: nil)
     }
     
     // MARK: - MapView Delegate
