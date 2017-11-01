@@ -130,6 +130,10 @@ class RegisterController: UIViewController,UITextFieldDelegate {
         self.navigationItem.leftItemsSupplementBackButton = true
         phone.delegate = self
         alertLabel.isHidden = true
+        
+        passcode.delegate = self
+        userName.delegate = self
+        securityCode.delegate = self
 
         
         // Do any additional setup after loading the view.
@@ -142,6 +146,17 @@ class RegisterController: UIViewController,UITextFieldDelegate {
     }
     
 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        userName.resignFirstResponder()
+        passcode.resignFirstResponder()
+        phone.resignFirstResponder()
+        securityCode.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text
             else {

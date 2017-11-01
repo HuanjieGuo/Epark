@@ -456,13 +456,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="48.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F3q-Un-g31">
                                         <rect key="frame" x="0.0" y="48.5" width="343" height="51.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -535,7 +535,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="30.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
@@ -564,7 +564,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="30.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" secureTextEntry="YES" smartDashesType="no"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
@@ -598,7 +598,7 @@
                                 <rect key="frame" x="16" y="273.5" width="343" height="53.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="71f-47-EPS">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="52.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+86" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlp-8y-RDf">
                                                 <rect key="frame" x="0.0" y="0.0" width="33.5" height="52.5"/>
@@ -607,10 +607,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9N-Jy-Zxt">
-                                                <rect key="frame" x="56.5" y="0.0" width="62.5" height="52.5"/>
+                                                <rect key="frame" x="56.5" y="0.0" width="225" height="52.5"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -632,10 +632,10 @@
                                 <rect key="frame" x="16" y="345" width="150" height="43.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r9-cX-4pj">
-                                <rect key="frame" x="191.5" y="283.5" width="30" height="33"/>
+                                <rect key="frame" x="229" y="350.5" width="30" height="33"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <connections>
@@ -691,7 +691,7 @@
                             <constraint firstItem="q0w-Wn-5pg" firstAttribute="leading" secondItem="c2R-Jx-fxg" secondAttribute="leadingMargin" id="Cz5-XD-o7U"/>
                             <constraint firstItem="N7E-Av-36n" firstAttribute="width" secondItem="c2R-Jx-fxg" secondAttribute="width" multiplier="0.4" id="J0I-6b-bL8"/>
                             <constraint firstItem="uq0-od-XaT" firstAttribute="leading" secondItem="c2R-Jx-fxg" secondAttribute="leadingMargin" id="JGR-2G-Jvk"/>
-                            <constraint firstItem="3r9-cX-4pj" firstAttribute="centerX" secondItem="c2R-Jx-fxg" secondAttribute="centerX" multiplier="1.1" id="JGp-Ef-0K3"/>
+                            <constraint firstItem="3r9-cX-4pj" firstAttribute="centerX" secondItem="c2R-Jx-fxg" secondAttribute="centerX" multiplier="1.3" id="JGp-Ef-0K3"/>
                             <constraint firstItem="q0w-Wn-5pg" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="1.23" id="KBN-fO-acb"/>
                             <constraint firstItem="WkO-TK-0ej" firstAttribute="height" secondItem="c2R-Jx-fxg" secondAttribute="height" multiplier="0.08" id="KFm-Ol-SxW"/>
                             <constraint firstItem="46w-mP-ux1" firstAttribute="height" secondItem="c2R-Jx-fxg" secondAttribute="height" multiplier="0.07" id="NmM-h5-8M3"/>
@@ -699,7 +699,7 @@
                             <constraint firstItem="WkO-TK-0ej" firstAttribute="leading" secondItem="c2R-Jx-fxg" secondAttribute="leadingMargin" id="TZI-F4-YcL"/>
                             <constraint firstItem="46w-mP-ux1" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="1.45" id="Vhq-vw-SbG"/>
                             <constraint firstItem="OGd-P6-rGe" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="0.7" constant="1" id="ZTx-n3-ik4"/>
-                            <constraint firstItem="3r9-cX-4pj" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="0.9" id="aRv-jG-eYN"/>
+                            <constraint firstItem="3r9-cX-4pj" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="1.1" id="aRv-jG-eYN"/>
                             <constraint firstItem="N7E-Av-36n" firstAttribute="height" secondItem="c2R-Jx-fxg" secondAttribute="height" multiplier="0.065" id="bo4-SQ-5d1"/>
                             <constraint firstItem="xvv-EH-2lL" firstAttribute="height" secondItem="c2R-Jx-fxg" secondAttribute="height" multiplier="0.15" id="eco-so-s0U"/>
                             <constraint firstItem="WkO-TK-0ej" firstAttribute="centerY" secondItem="c2R-Jx-fxg" secondAttribute="centerY" multiplier="0.9" id="fsr-oj-Q9k"/>
@@ -709,6 +709,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="46w-mP-ux1" secondAttribute="trailing" id="lYc-2f-9dk"/>
                             <constraint firstItem="xvv-EH-2lL" firstAttribute="leading" secondItem="c2R-Jx-fxg" secondAttribute="leadingMargin" id="m52-Vd-nXE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xvv-EH-2lL" secondAttribute="trailing" id="qLW-59-WvI"/>
+                            <constraint firstItem="U9N-Jy-Zxt" firstAttribute="width" secondItem="c2R-Jx-fxg" secondAttribute="width" multiplier="0.6" id="qj3-j0-pwH"/>
                             <constraint firstItem="xvv-EH-2lL" firstAttribute="centerX" secondItem="c2R-Jx-fxg" secondAttribute="centerX" id="rX2-Ra-Dej"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uq0-od-XaT" secondAttribute="trailing" id="tSa-XC-cob"/>
                         </constraints>
@@ -1082,7 +1083,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zS-1T-vsX" userLabel="ErrorPopupView">
-                                <rect key="frame" x="37" y="160" width="301" height="333.5"/>
+                                <rect key="frame" x="37" y="167" width="301" height="333.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5D-qd-U1G" customClass="MyProviewButton" customModule="ofoDemo" customModuleProvider="target">
                                         <rect key="frame" x="128" y="284" width="44" height="44"/>
@@ -1139,8 +1140,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="1zS-1T-vsX" firstAttribute="top" secondItem="Kjb-YX-fzs" secondAttribute="bottom" constant="140" id="0t8-f9-lCk"/>
                             <constraint firstItem="1zS-1T-vsX" firstAttribute="height" secondItem="ist-XF-VUf" secondAttribute="height" multiplier="0.5" id="5Cr-Vq-WIn"/>
+                            <constraint firstItem="1zS-1T-vsX" firstAttribute="centerY" secondItem="ist-XF-VUf" secondAttribute="centerY" id="Dff-wb-jKI"/>
                             <constraint firstItem="1zS-1T-vsX" firstAttribute="centerX" secondItem="ist-XF-VUf" secondAttribute="centerX" id="Pmu-OA-Sm9"/>
                             <constraint firstItem="1zS-1T-vsX" firstAttribute="width" secondItem="ist-XF-VUf" secondAttribute="width" multiplier="0.8" constant="1" id="vpv-OL-049"/>
                         </constraints>
@@ -1174,9 +1175,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redPackerGuideYellow" translatesAutoresizingMaskIntoConstraints="NO" id="H5u-P5-exs">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="139"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="139"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="gfP-SH-64q"/>
+                                    <constraint firstAttribute="width" constant="300" id="gfP-SH-64q"/>
                                 </constraints>
                             </imageView>
                         </subviews>

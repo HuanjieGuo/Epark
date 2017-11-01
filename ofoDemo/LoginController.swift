@@ -11,7 +11,7 @@ import SwiftHTTP
 import SwiftyJSON
 import SDCAlertView
 
-class LoginController: UIViewController {
+class LoginController: UIViewController,UITextFieldDelegate {
     
 
    
@@ -29,6 +29,9 @@ class LoginController: UIViewController {
         userNameField.adjustsFontSizeToFitWidth = true
         userPasscodeField.adjustsFontSizeToFitWidth = true
         
+        userNameField.delegate = self
+        userPasscodeField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,6 +47,15 @@ class LoginController: UIViewController {
     var userID = ""
     var userPhoto = ""
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        userPasscodeField.resignFirstResponder()
+        userNameField.resignFirstResponder()
+    }
 
     func checkUserInformation()  {
         if !userNameField.text!.isEmpty && !userPasscodeField.text!.isEmpty{
