@@ -16,7 +16,6 @@
 		CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F52681F17695000DAEB89 /* MenuController.swift */; };
 		CF1234CE1F36D4A200597CC8 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1234CD1F36D4A200597CC8 /* UIViewHelper.swift */; };
 		CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1234CF1F36E3FB00597CC8 /* PakingController.swift */; };
-		CF1494B41F31E51F00417FC7 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1494B31F31E51F00417FC7 /* ScanController.swift */; };
 		CF1494B61F33177800417FC7 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF1494B51F33177800417FC7 /* CodeScan.bundle */; };
 		CF2375441F924B2000DC4291 /* RigisterSucceedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2375431F924B2000DC4291 /* RigisterSucceedController.swift */; };
 		CF26695B1F264777000EA704 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF26695A1F264777000EA704 /* MyPinAnnotation.swift */; };
@@ -31,9 +30,11 @@
 		CF7EB2241F3826A80049FE23 /* 请输入车位号.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB2201F3826A80049FE23 /* 请输入车位号.mp3 */; };
 		CF9577261F529D8C004F40DD /* passValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9577251F529D8C004F40DD /* passValue.swift */; };
 		CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */; };
-		CFC6850F1F356F6E00BE11AE /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC6850E1F356F6E00BE11AE /* InputController.swift */; };
 		CFC685111F35731100BE11AE /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC685101F35731100BE11AE /* ColorHelper.swift */; };
 		CFE4C42B1F7BD93F00D34E2E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */; };
+		CFE8429A1FA9EFBE0080FC92 /* PostParkPlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */; };
+		CFE8429B1FA9EFC30080FC92 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE842931FA9ED550080FC92 /* address.json */; };
+		CFE8429C1FA9EFC60080FC92 /* AddressPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE842941FA9ED550080FC92 /* AddressPickerView.swift */; };
 		CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */; };
 		CFF349511EF3CFCB008F65EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF349501EF3CFCB008F65EA /* ViewController.swift */; };
 		CFF349561EF3CFCB008F65EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF349551EF3CFCB008F65EA /* Assets.xcassets */; };
@@ -91,6 +92,9 @@
 		CFC6850E1F356F6E00BE11AE /* InputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		CFC685101F35731100BE11AE /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		CFE842931FA9ED550080FC92 /* address.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
+		CFE842941FA9ED550080FC92 /* AddressPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPickerView.swift; sourceTree = "<group>"; };
+		CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParkPlaceController.swift; sourceTree = "<group>"; };
 		CFF3494B1EF3CFCB008F65EA /* ofoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF349501EF3CFCB008F65EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,17 @@
 			path = voice;
 			sourceTree = "<group>";
 		};
+		CFE842921FA9ED550080FC92 /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */,
+				CFE842931FA9ED550080FC92 /* address.json */,
+				CFE842941FA9ED550080FC92 /* AddressPickerView.swift */,
+			);
+			name = AddressPickerView;
+			path = "../../../../../../../../../Downloads/AddressPickerViewForSwift-master/AddressPickerViewForSwift/AddressPickerView";
+			sourceTree = "<group>";
+		};
 		CFF349421EF3CFCB008F65EA = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +220,7 @@
 		CFF3494D1EF3CFCB008F65EA /* ofoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CFE842921FA9ED550080FC92 /* AddressPickerView */,
 				CF694F3F1FA6B93B00FCFC17 /* Helper */,
 				CF694F401FA6BACA00FCFC17 /* BookInfo */,
 				CFF3497F1EF3E094008F65EA /* webViewController.swift */,
@@ -385,6 +401,7 @@
 				CF7EB2211F3826A80049FE23 /* 已开锁.mp3 in Resources */,
 				CFF349561EF3CFCB008F65EA /* Assets.xcassets in Resources */,
 				CF7EB2221F3826A80049FE23 /* 按开锁按钮进行停车.mp3 in Resources */,
+				CFE8429B1FA9EFC30080FC92 /* address.json in Resources */,
 				CF694F411FA752C300FCFC17 /* Main.storyboard in Resources */,
 				CF7EB2231F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 in Resources */,
 				CF1494B61F33177800417FC7 /* CodeScan.bundle in Resources */,
@@ -462,14 +479,15 @@
 			files = (
 				CF0DD9EB1FA0224E002AFA4F /* BookCellTableViewCell.swift in Sources */,
 				CFF4FAE51F8FC41800E04372 /* RegisterController.swift in Sources */,
+				CFE8429C1FA9EFC60080FC92 /* AddressPickerView.swift in Sources */,
 				CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */,
 				CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */,
 				CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */,
+				CFE8429A1FA9EFBE0080FC92 /* PostParkPlaceController.swift in Sources */,
 				CF2375441F924B2000DC4291 /* RigisterSucceedController.swift in Sources */,
 				CF42A0051F4C1656004EC89B /* revealViewController.swift in Sources */,
 				CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */,
 				CF26695B1F264777000EA704 /* MyPinAnnotation.swift in Sources */,
-				CFC6850F1F356F6E00BE11AE /* InputController.swift in Sources */,
 				CF0E9F481F39884D00442D2F /* NetworkHelper.swift in Sources */,
 				CFC685111F35731100BE11AE /* ColorHelper.swift in Sources */,
 				CFF349511EF3CFCB008F65EA /* ViewController.swift in Sources */,
@@ -478,7 +496,6 @@
 				CFE4C42B1F7BD93F00D34E2E /* ContainerViewController.swift in Sources */,
 				CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */,
 				CF2A97011F374CA000AF0D8A /* UnlockController.swift in Sources */,
-				CF1494B41F31E51F00417FC7 /* ScanController.swift in Sources */,
 				CFF349801EF3E094008F65EA /* webViewController.swift in Sources */,
 				CF9577261F529D8C004F40DD /* passValue.swift in Sources */,
 				CF0DD9EE1FA0B84F002AFA4F /* BookInfomationController.swift in Sources */,
