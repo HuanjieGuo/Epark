@@ -54,7 +54,6 @@ class MenuController: UITableViewController {
                 }
                 if response.statusCode == 200{
                     self.bookInformation = JSON(response.data)["result"].arrayObject as! [[String : Any]]
-                    print("成功赋值字典\n\(self.bookInformation[1])")
                     self.base1.cacheSetDic(key: "bookInfo", value: self.bookInformation)
 
                     self.performSegue(withIdentifier: "myBookInfo", sender: self)

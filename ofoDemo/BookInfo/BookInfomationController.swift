@@ -65,7 +65,7 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         
         let cellNib = UINib(nibName:"BookCellTableViewCell",bundle:nil)
         bookTableView.register(cellNib, forCellReuseIdentifier: "bookCell")
-        print("赋值成功：\n\(bookInformation[1])")
+        
         
         
         
