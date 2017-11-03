@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -1253,8 +1253,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-EL-11Q">
-                                                    <rect key="frame" x="179.5" y="0.0" width="187.5" height="49.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-EL-11Q">
+                                                    <rect key="frame" x="104.5" y="0.0" width="262.5" height="49.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1272,7 +1272,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="HCt-EL-11Q" firstAttribute="width" secondItem="OD7-Pl-0Jl" secondAttribute="width" multiplier="0.5" id="0HF-Ps-RkE"/>
+                                            <constraint firstItem="HCt-EL-11Q" firstAttribute="width" secondItem="OD7-Pl-0Jl" secondAttribute="width" multiplier="0.7" id="0HF-Ps-RkE"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -1353,7 +1353,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="choseLocaCell" destination="OD7-Pl-0Jl" id="Lv7-bF-uY5"/>
                         <outlet property="contactMan" destination="E4b-6r-2Q6" id="HYd-gF-eJj"/>
                         <outlet property="detailLocationInformationView" destination="Tr2-T7-rxd" id="mKr-r7-nO6"/>
                         <outlet property="locationLabel" destination="HCt-EL-11Q" id="rE1-Bo-GqQ"/>
