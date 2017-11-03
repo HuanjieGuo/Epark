@@ -128,7 +128,7 @@ class BookInfomationController: UIViewController,UITableViewDelegate,UITableView
         
         //until time
         let timeUnit = nowBookInformation["timeunit"] as? Double
-        print(timeUnit)
+        
 
         
          if(timeUnit == nil){

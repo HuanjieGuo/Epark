@@ -33,7 +33,6 @@
 		CFC225311FAB6FCC006FD82C /* MyPostParkPlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC225301FAB6FCC006FD82C /* MyPostParkPlaceController.swift */; };
 		CFC685111F35731100BE11AE /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC685101F35731100BE11AE /* ColorHelper.swift */; };
 		CFE4C42B1F7BD93F00D34E2E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */; };
-		CFE8429A1FA9EFBE0080FC92 /* PostParkPlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */; };
 		CFE8429B1FA9EFC30080FC92 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE842931FA9ED550080FC92 /* address.json */; };
 		CFE8429C1FA9EFC60080FC92 /* AddressPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE842941FA9ED550080FC92 /* AddressPickerView.swift */; };
 		CFF3494F1EF3CFCB008F65EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */; };
@@ -96,7 +95,6 @@
 		CFE4C42A1F7BD93F00D34E2E /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CFE842931FA9ED550080FC92 /* address.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = address.json; sourceTree = "<group>"; };
 		CFE842941FA9ED550080FC92 /* AddressPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPickerView.swift; sourceTree = "<group>"; };
-		CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParkPlaceController.swift; sourceTree = "<group>"; };
 		CFF3494B1EF3CFCB008F65EA /* ofoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF3494E1EF3CFCB008F65EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF349501EF3CFCB008F65EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 		CFE842921FA9ED550080FC92 /* AddressPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				CFE842961FA9EE030080FC92 /* PostParkPlaceController.swift */,
 				CFE842931FA9ED550080FC92 /* address.json */,
 				CFC225301FAB6FCC006FD82C /* MyPostParkPlaceController.swift */,
 				CFE842941FA9ED550080FC92 /* AddressPickerView.swift */,
@@ -486,7 +483,6 @@
 				CF0F52691F17695000DAEB89 /* MenuController.swift in Sources */,
 				CF1234D01F36E3FB00597CC8 /* PakingController.swift in Sources */,
 				CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */,
-				CFE8429A1FA9EFBE0080FC92 /* PostParkPlaceController.swift in Sources */,
 				CF2375441F924B2000DC4291 /* RigisterSucceedController.swift in Sources */,
 				CF42A0051F4C1656004EC89B /* revealViewController.swift in Sources */,
 				CF0109B11F5FB6A000E15A3C /* MyTableCell.swift in Sources */,

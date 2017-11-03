@@ -1169,7 +1169,7 @@
         <scene sceneID="0rn-IH-XyH">
             <objects>
                 <tableViewController id="hcF-dG-7Gc" customClass="MyPostParkPlaceController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k9Z-hq-fJC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k9Z-hq-fJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1193,7 +1193,7 @@
                                                     <rect key="frame" x="104.5" y="0.0" width="262.5" height="49.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -1253,8 +1253,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-EL-11Q">
-                                                    <rect key="frame" x="292" y="0.0" width="75" height="49.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCt-EL-11Q">
+                                                    <rect key="frame" x="179.5" y="0.0" width="187.5" height="49.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1263,6 +1263,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="2hp-lw-Osh" secondAttribute="bottom" id="8U1-sP-GT2"/>
                                                 <constraint firstItem="2hp-lw-Osh" firstAttribute="width" secondItem="XoN-h9-wAu" secondAttribute="width" multiplier="0.22" id="Tnr-dd-kkN"/>
+                                                <constraint firstItem="HCt-EL-11Q" firstAttribute="trailing" secondItem="XoN-h9-wAu" secondAttribute="trailingMargin" id="UWb-67-dGq"/>
                                                 <constraint firstAttribute="bottom" secondItem="HCt-EL-11Q" secondAttribute="bottom" id="Zbd-hi-qvT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="HCt-EL-11Q" secondAttribute="trailing" id="aO4-yn-bzO"/>
                                                 <constraint firstItem="2hp-lw-Osh" firstAttribute="leading" secondItem="XoN-h9-wAu" secondAttribute="leadingMargin" id="dKb-1p-NA4"/>
@@ -1271,7 +1272,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
-                                            <constraint firstItem="HCt-EL-11Q" firstAttribute="width" secondItem="OD7-Pl-0Jl" secondAttribute="width" multiplier="0.2" id="0HF-Ps-RkE"/>
+                                            <constraint firstItem="HCt-EL-11Q" firstAttribute="width" secondItem="OD7-Pl-0Jl" secondAttribute="width" multiplier="0.5" id="0HF-Ps-RkE"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -1290,7 +1291,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
@@ -1319,7 +1320,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
@@ -1339,7 +1340,26 @@
                             <outlet property="delegate" destination="hcF-dG-7Gc" id="cYO-rl-UXd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wxy-0F-VI5"/>
+                    <navigationItem key="navigationItem" id="wxy-0F-VI5">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backIndicator" id="JcM-5l-78w">
+                            <connections>
+                                <action selector="backToLast:" destination="hcF-dG-7Gc" id="ZxR-Ln-VRC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="发布" id="gL0-x3-nOx">
+                            <connections>
+                                <action selector="postBtn:" destination="hcF-dG-7Gc" id="o9J-E0-n8p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="choseLocaCell" destination="OD7-Pl-0Jl" id="Lv7-bF-uY5"/>
+                        <outlet property="contactMan" destination="E4b-6r-2Q6" id="HYd-gF-eJj"/>
+                        <outlet property="detailLocationInformationView" destination="Tr2-T7-rxd" id="mKr-r7-nO6"/>
+                        <outlet property="locationLabel" destination="HCt-EL-11Q" id="rE1-Bo-GqQ"/>
+                        <outlet property="phone" destination="p9o-GF-srW" id="Af3-0K-Yqp"/>
+                        <outlet property="remarkView" destination="Q9X-dQ-3hx" id="UF5-y9-Kmq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se5-ZL-ocb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
