@@ -1359,6 +1359,7 @@
                         <outlet property="phone" destination="p9o-GF-srW" id="Af3-0K-Yqp"/>
                         <outlet property="postBtnView" destination="gL0-x3-nOx" id="1Vi-jW-b5v"/>
                         <outlet property="remarkView" destination="Q9X-dQ-3hx" id="UF5-y9-Kmq"/>
+                        <segue destination="cbc-5t-1sE" kind="push" identifier="finishInput" id="010-uH-Cu6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se5-ZL-ocb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2071,6 +2072,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ei-YA-EU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="159" y="-365"/>
+        </scene>
+        <!--填写成功-->
+        <scene sceneID="U48-30-W1l">
+            <objects>
+                <viewController id="cbc-5t-1sE" customClass="FinishPostController" customModule="ofoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Rf-hP-nts"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dqm-Tt-PaD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CNn-yA-trf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="true" translatesAutoresizingMaskIntoConstraints="NO" id="7el-PZ-nbX">
+                                <rect key="frame" x="131.5" y="100" width="112.5" height="133.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息已提交，请留意手机来电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yu1-rt-FNA">
+                                <rect key="frame" x="74.5" y="269.5" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-fv-Oqt">
+                                <rect key="frame" x="16" y="377" width="343" height="46.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="返回主页">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnToMain1:" destination="cbc-5t-1sE" eventType="touchUpInside" id="MjZ-Hs-iIe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业人员将与您预约时间上门安装" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF9-Zo-UVG">
+                                <rect key="frame" x="57.5" y="323" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SF9-Zo-UVG" firstAttribute="centerY" secondItem="CNn-yA-trf" secondAttribute="centerY" id="Clq-EH-Yka"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dGE-fv-Oqt" secondAttribute="trailing" id="Ehb-rN-xC4"/>
+                            <constraint firstItem="dGE-fv-Oqt" firstAttribute="height" secondItem="CNn-yA-trf" secondAttribute="height" multiplier="0.07" id="ICf-vk-HeL"/>
+                            <constraint firstItem="dGE-fv-Oqt" firstAttribute="leading" secondItem="CNn-yA-trf" secondAttribute="leadingMargin" id="N4d-XJ-qFn"/>
+                            <constraint firstItem="Yu1-rt-FNA" firstAttribute="centerX" secondItem="CNn-yA-trf" secondAttribute="centerX" id="Oyl-OS-KZm"/>
+                            <constraint firstItem="7el-PZ-nbX" firstAttribute="centerX" secondItem="CNn-yA-trf" secondAttribute="centerX" id="QyY-aL-h9L"/>
+                            <constraint firstItem="SF9-Zo-UVG" firstAttribute="centerX" secondItem="CNn-yA-trf" secondAttribute="centerX" id="T42-gk-bWG"/>
+                            <constraint firstItem="Yu1-rt-FNA" firstAttribute="centerY" secondItem="CNn-yA-trf" secondAttribute="centerY" multiplier="0.84" id="ZXJ-le-P2Q"/>
+                            <constraint firstItem="7el-PZ-nbX" firstAttribute="height" secondItem="CNn-yA-trf" secondAttribute="height" multiplier="0.2" id="aAM-tx-z6m"/>
+                            <constraint firstItem="7el-PZ-nbX" firstAttribute="centerY" secondItem="CNn-yA-trf" secondAttribute="centerY" multiplier="0.5" id="efl-gC-E4Z"/>
+                            <constraint firstItem="7el-PZ-nbX" firstAttribute="width" secondItem="CNn-yA-trf" secondAttribute="width" multiplier="0.3" id="eu7-eL-xj8"/>
+                            <constraint firstItem="dGE-fv-Oqt" firstAttribute="centerY" secondItem="CNn-yA-trf" secondAttribute="centerY" multiplier="1.2" id="gzk-9m-57H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="填写成功" id="kLB-Vd-Pzx">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="backIndicator" id="rvs-KR-2Ur">
+                            <connections>
+                                <action selector="returnToMain2:" destination="cbc-5t-1sE" id="2OR-FY-7tU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUF-cQ-ucw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1665" y="-366"/>
         </scene>
     </scenes>
     <resources>

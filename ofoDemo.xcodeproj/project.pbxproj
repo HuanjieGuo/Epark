@@ -28,6 +28,7 @@
 		CF7EB2221F3826A80049FE23 /* 按开锁按钮进行停车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21E1F3826A80049FE23 /* 按开锁按钮进行停车.mp3 */; };
 		CF7EB2231F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB21F1F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 */; };
 		CF7EB2241F3826A80049FE23 /* 请输入车位号.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF7EB2201F3826A80049FE23 /* 请输入车位号.mp3 */; };
+		CF9354281FADE87500AEBE4D /* FinishPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9354271FADE87500AEBE4D /* FinishPostController.swift */; };
 		CF9577261F529D8C004F40DD /* passValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9577251F529D8C004F40DD /* passValue.swift */; };
 		CFA6CBE01F41732A005DF17E /* ParkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */; };
 		CFC225311FAB6FCC006FD82C /* MyPostParkPlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC225301FAB6FCC006FD82C /* MyPostParkPlaceController.swift */; };
@@ -87,6 +88,7 @@
 		CF7EB21F1F3826A80049FE23 /* 请将车辆移开车位后结束停车.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "请将车辆移开车位后结束停车.mp3"; sourceTree = "<group>"; };
 		CF7EB2201F3826A80049FE23 /* 请输入车位号.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "请输入车位号.mp3"; sourceTree = "<group>"; };
 		CF8A203B1F19BB7400366A1D /* ofoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF9354271FADE87500AEBE4D /* FinishPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishPostController.swift; sourceTree = "<group>"; };
 		CF9577251F529D8C004F40DD /* passValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = passValue.swift; sourceTree = "<group>"; };
 		CFA6CBDF1F41732A005DF17E /* ParkDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkDetailController.swift; sourceTree = "<group>"; };
 		CFC225301FAB6FCC006FD82C /* MyPostParkPlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostParkPlaceController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				CFE842931FA9ED550080FC92 /* address.json */,
 				CFC225301FAB6FCC006FD82C /* MyPostParkPlaceController.swift */,
+				CF9354271FADE87500AEBE4D /* FinishPostController.swift */,
 				CFE842941FA9ED550080FC92 /* AddressPickerView.swift */,
 			);
 			name = AddressPickerView;
@@ -477,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9354281FADE87500AEBE4D /* FinishPostController.swift in Sources */,
 				CF0DD9EB1FA0224E002AFA4F /* BookCellTableViewCell.swift in Sources */,
 				CFF4FAE51F8FC41800E04372 /* RegisterController.swift in Sources */,
 				CFE8429C1FA9EFC60080FC92 /* AddressPickerView.swift in Sources */,
