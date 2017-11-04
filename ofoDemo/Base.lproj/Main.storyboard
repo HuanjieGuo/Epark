@@ -1191,7 +1191,7 @@
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-6r-2Q6">
                                                     <rect key="frame" x="104.5" y="0.0" width="262.5" height="49.5"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 </textField>
@@ -1223,7 +1223,7 @@
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-GF-srW">
                                                     <rect key="frame" x="104.5" y="0.0" width="262.5" height="49.5"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
@@ -1357,6 +1357,7 @@
                         <outlet property="detailLocationInformationView" destination="Tr2-T7-rxd" id="mKr-r7-nO6"/>
                         <outlet property="locationLabel" destination="HCt-EL-11Q" id="rE1-Bo-GqQ"/>
                         <outlet property="phone" destination="p9o-GF-srW" id="Af3-0K-Yqp"/>
+                        <outlet property="postBtnView" destination="gL0-x3-nOx" id="1Vi-jW-b5v"/>
                         <outlet property="remarkView" destination="Q9X-dQ-3hx" id="UF5-y9-Kmq"/>
                     </connections>
                 </tableViewController>
