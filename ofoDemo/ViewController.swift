@@ -240,7 +240,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
         //rea
          let revealVC = revealViewController()!
-            revealVC.rearViewRevealWidth = self.view.bounds.width/3*2
+            revealVC.rearViewRevealWidth = self.view.bounds.width/4*3
         
         
             navigationItem.leftBarButtonItem?.target = revealVC

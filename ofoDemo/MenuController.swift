@@ -12,6 +12,9 @@ import SwiftHTTP
 
 class MenuController: UITableViewController {
 
+    @IBAction func returnToLogin(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
     @IBOutlet weak var certImageView: UIImageView!
     @IBOutlet weak var certLabel: UILabel!
     @IBOutlet weak var myBookInfoCell: UITableViewCell!
