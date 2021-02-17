@@ -1,28 +1,28 @@
-# Epark快捷停车系统
-##### 由小黄车app架构得到启发，刚好有开发一个停车app需求，于是就摸索着做了这个app
+# Epark Paring System
+#####  Motivated by the idea of ofo，we design this software to share your parking space.
 ----------
-## 主要功能
->* 用户注册<br>
->* 车位发布<br>
->* 车位查找<br>
->* 导航停车<br>
+## Main Function
+>* Register<br>
+>* Parking space upload<br>
+>* Search spare space<br>
+>* Navigate to park<br>
 ----------
-## 提示
-* 最新更新优化了自动布局，适配各款iPhone和iPad
+## Tip
+* update and optimize the layout，make it perfect to all version of iPhone and iPad.
 ----------
-## 项目截图<br>
-#### 登录界面<br>
+## Project Screenshot<br>
+#### Login<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/login.png)<br><br><br>
-#### 注册界面<br>
+#### Register<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/rigister.png)<br><br><br>
-#### 菜单界面<br>
+#### Menu<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/swearView.png)<br><br><br>
-#### 首页界面<br>
+#### Main <br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/map.png)<br><br><br>
-#### 规划路径界面<br>
+#### Navigate<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/route.png)<br><br><br>
-#### 解锁界面<br>
+#### Unlock<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/unlock.png)<br><br><br>
-#### 停车界面<br>
+#### Parking<br>
 ![Image text](https://github.com/hjackguo/Picture/blob/master/parking.png)<br><br><br>
 
