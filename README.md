@@ -5,7 +5,7 @@
 >* Register<br>
 >* Parking space upload<br>
 >* Search spare space<br>
->* Navigate to park<br>
+>* Navigate to park your car<br>
 ----------
 ## Tip
 * update and optimize the layout，make it perfect to all version of iPhone and iPad.
