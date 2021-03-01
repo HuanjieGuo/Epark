@@ -1,5 +1,5 @@
 # Epark Paring System
-#####  Motivated by the idea of ofo，we design this software to share your parking space.
+#####  Motivated by the idea of ofo，we design this software to share our parking spaces.
 ----------
 ## Main Function
 >* Register<br>
